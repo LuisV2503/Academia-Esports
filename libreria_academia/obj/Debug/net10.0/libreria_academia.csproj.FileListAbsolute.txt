@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\Academia\libreria_academia\bin\Debug\net10.0\libreria_academia.deps.json
+C:\Users\Administrator\Desktop\Academia\libreria_academia\bin\Debug\net10.0\libreria_academia.dll
+C:\Users\Administrator\Desktop\Academia\libreria_academia\bin\Debug\net10.0\libreria_academia.pdb
+C:\Users\Administrator\Desktop\Academia\libreria_academia\obj\Debug\net10.0\libreria_academia.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Academia\libreria_academia\obj\Debug\net10.0\libreria_academia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Academia\libreria_academia\obj\Debug\net10.0\libreria_academia.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Academia\libreria_academia\obj\Debug\net10.0\libreria_academia.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Academia\libreria_academia\obj\Debug\net10.0\libreria_academia.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Academia\libreria_academia\obj\Debug\net10.0\libreria_academia.dll
+C:\Users\Administrator\Desktop\Academia\libreria_academia\obj\Debug\net10.0\refint\libreria_academia.dll
+C:\Users\Administrator\Desktop\Academia\libreria_academia\obj\Debug\net10.0\libreria_academia.pdb
+C:\Users\Administrator\Desktop\Academia\libreria_academia\obj\Debug\net10.0\ref\libreria_academia.dll
+C:\Users\Administrator\Desktop\Academia\libreria_academia\obj\Debug\net10.0\libreria.98C72330.Up2Date

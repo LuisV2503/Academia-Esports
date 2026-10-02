@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="consola_academia/consola_academia.csproj" Id="4435bd7c-5a90-4a93-80e4-117805f50b9a" />
+  <Project Path="libreria_academia/libreria_academia.csproj" Id="72b3e7d7-4161-49b6-90d1-66912b12b742" />
+  <Project Path="prueba_academia/prueba_academia.csproj" Id="b83cb400-8904-41d3-9680-6d49e796b3a7" />
+</Solution>

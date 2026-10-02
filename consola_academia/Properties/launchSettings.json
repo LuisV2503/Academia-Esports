@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "consola_academia": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
