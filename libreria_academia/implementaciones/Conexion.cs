@@ -18,9 +18,9 @@ namespace libreria_academia.implementaciones
         {
             // Personas <-> Sueldos (1 a 1)
             modelBuilder.Entity<Personas>()
-                .HasOne(p => p._sueldo)
-                .WithOne(s => s._persona)
-                .HasForeignKey<Personas>(p => p.Sueldo);
+            .HasOne(p => p._sueldo)
+            .WithMany(s => s.Personas)
+            .HasForeignKey(p => p.Sueldo);
 
             // Personas <-> roles (muchos a 1)
             modelBuilder.Entity<Jugadores>()
@@ -163,7 +163,7 @@ namespace libreria_academia.implementaciones
                 .HasForeignKey(e => e.Evento);
         }
 
-        public DbSet<Sueldos>? Sueldos { get; set; }
+        public DbSet<entidades.Sueldos>? Sueldos { get; set; }
         public DbSet<Personas>? Personas { get; set; }
         public DbSet<Jugadores>? Jugadores { get; set; }
         public DbSet<Entrenadores>? Entrenadores { get; set; }

@@ -1,5 +1,6 @@
 ﻿using libreria_academia.entidades;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace libreria_academia.interfaces
 {
@@ -28,5 +29,8 @@ namespace libreria_academia.interfaces
         public DbSet<Eventos>? Eventos { get; set; }
         public DbSet<Eventos_Organizadores>? Eventos_Organizadores { get; set; }
         public DbSet<Entretenimientos>? Entretenimientos { get; set; }
+
+        EntityEntry<T> Entry<T>(T entity) where T : class;
+        int SaveChanges();
     }
 }

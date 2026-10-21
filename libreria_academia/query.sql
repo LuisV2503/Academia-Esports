@@ -216,3 +216,15 @@ CREATE TABLE [Entretenimientos] (
 
 INSERT INTO [Entretenimientos] ([Nombre], [Descripcion], [Duracion], [Evento])
 VALUES ('Show de drones', 'Espectáculo de drones antes del torneo', 30, 1);
+
+-- errorcito para arreglar que muchas personas tengas el mismo sueldo
+DECLARE @nombre NVARCHAR(200);
+
+SELECT @nombre = name
+FROM sys.key_constraints
+WHERE parent_object_id = OBJECT_ID('dbo.Personas') AND type = 'UQ';
+
+IF @nombre IS NOT NULL
+    EXEC('ALTER TABLE [dbo].[Personas] DROP CONSTRAINT [' + @nombre + ']');
+ELSE
+    PRINT 'No hay ninguna restricción UNIQUE en Personas';

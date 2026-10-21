@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace libreria_academia.nucleo
 {
-
 
     public class Dbconexion
     {

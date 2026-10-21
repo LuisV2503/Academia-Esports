@@ -1,10 +1,10 @@
-﻿using libreria_academia.entidades;
+using libreria_academia.entidades;
 using libreria_academia.implementaciones;
 using libreria_academia.interfaces;
 using libreria_academia.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace prueba_academia.pruebas
+namespace presentacion_pruebas
 {
     [TestClass]
     public class PersonasPrueba
@@ -45,7 +45,7 @@ namespace prueba_academia.pruebas
                 Nombre = "Test",
                 FechaNacimiento = DateTime.Now,
                 Nacionalidad = "Test",
-                Sueldo = this.sueldoEntidad.id,
+                Sueldo = this.sueldoEntidad.Id,
             };
 
             this.conexion.Personas!.Add(this.entidad!);

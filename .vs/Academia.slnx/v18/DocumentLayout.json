@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Academia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B83CB400-8904-41D3-9680-6D49E796B3A7}|prueba_academia\\prueba_academia.csproj|c:\\users\\administrator\\desktop\\academia\\prueba_academia\\pruebas\\personasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B83CB400-8904-41D3-9680-6D49E796B3A7}|prueba_academia\\prueba_academia.csproj|solutionrelative:prueba_academia\\pruebas\\personasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\sueldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\sueldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|c:\\users\\administrator\\desktop\\academia\\servicios_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|solutionrelative:servicios_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\implementaciones\\personasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\implementaciones\\personasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\implementaciones\\sueldosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\implementaciones\\sueldosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|c:\\users\\administrator\\desktop\\academia\\servicios_academia\\controllers\\sueldoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|solutionrelative:servicios_academia\\controllers\\sueldoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|c:\\users\\administrator\\desktop\\academia\\servicios_academia\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|solutionrelative:servicios_academia\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\nucleo\\dbconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\nucleo\\dbconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\interfaces\\isueldosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\interfaces\\isueldosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4435BD7C-5A90-4A93-80E4-117805F50B9A}|consola_academia\\consola_academia.csproj|c:\\users\\administrator\\desktop\\academia\\consola_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4435BD7C-5A90-4A93-80E4-117805F50B9A}|consola_academia\\consola_academia.csproj|solutionrelative:consola_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{B83CB400-8904-41D3-9680-6D49E796B3A7}|prueba_academia\\prueba_academia.csproj|c:\\users\\administrator\\desktop\\academia\\prueba_academia\\pruebas\\entrenadoresprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B83CB400-8904-41D3-9680-6D49E796B3A7}|prueba_academia\\prueba_academia.csproj|solutionrelative:prueba_academia\\pruebas\\entrenadoresprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,83 +50,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\Conexion.cs",
               "RelativeDocumentMoniker": "libreria_academia\\implementaciones\\Conexion.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\Conexion.cs",
               "RelativeToolTip": "libreria_academia\\implementaciones\\Conexion.cs",
-              "ViewState": "AgIAALAAAAAAAAAAAAA6wLYAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T22:39:49.549Z",
+              "WhenOpened": "2026-10-21T01:40:08.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IConexion.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\interfaces\\IConexion.cs",
-              "RelativeDocumentMoniker": "libreria_academia\\interfaces\\IConexion.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\interfaces\\IConexion.cs",
-              "RelativeToolTip": "libreria_academia\\interfaces\\IConexion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABQAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Program.cs",
+              "RelativeDocumentMoniker": "servicios_academia\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Program.cs",
+              "RelativeToolTip": "servicios_academia\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T22:10:38.475Z",
+              "WhenOpened": "2026-10-21T01:02:21.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonasPrueba.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\prueba_academia\\pruebas\\PersonasPrueba.cs",
-              "RelativeDocumentMoniker": "prueba_academia\\pruebas\\PersonasPrueba.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\prueba_academia\\pruebas\\PersonasPrueba.cs",
-              "RelativeToolTip": "prueba_academia\\pruebas\\PersonasPrueba.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAjwBwAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "ISueldosAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\interfaces\\ISueldosAplicacion.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\interfaces\\ISueldosAplicacion.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\interfaces\\ISueldosAplicacion.cs",
+              "RelativeToolTip": "libreria_academia\\interfaces\\ISueldosAplicacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T21:50:46.075Z",
+              "WhenOpened": "2026-10-19T20:27:51.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sueldos.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Sueldos.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Sueldos.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Sueldos.cs*",
+              "RelativeToolTip": "libreria_academia\\entidades\\Sueldos.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T20:24:42.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\consola_academia\\Program.cs",
-              "RelativeDocumentMoniker": "consola_academia\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\consola_academia\\Program.cs",
-              "RelativeToolTip": "consola_academia\\Program.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAD8AAAASAAAAAAAAAA==",
+              "Title": "SueldosAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\SueldosAplicacion.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\implementaciones\\SueldosAplicacion.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\SueldosAplicacion.cs",
+              "RelativeToolTip": "libreria_academia\\implementaciones\\SueldosAplicacion.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAApwCoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T21:16:49.387Z",
+              "WhenOpened": "2026-10-19T20:25:04.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dbconexion.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\nucleo\\Dbconexion.cs",
-              "RelativeDocumentMoniker": "libreria_academia\\nucleo\\Dbconexion.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\nucleo\\Dbconexion.cs",
-              "RelativeToolTip": "libreria_academia\\nucleo\\Dbconexion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABDAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "PersonasAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\PersonasAplicacion.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\implementaciones\\PersonasAplicacion.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\PersonasAplicacion.cs",
+              "RelativeToolTip": "libreria_academia\\implementaciones\\PersonasAplicacion.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwC8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T22:47:09.439Z",
+              "WhenOpened": "2026-10-19T20:22:06.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PersonasController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Controllers\\PersonasController.cs",
+              "RelativeDocumentMoniker": "servicios_academia\\Controllers\\PersonasController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Controllers\\PersonasController.cs",
+              "RelativeToolTip": "servicios_academia\\Controllers\\PersonasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T20:44:16.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "query.sql",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\query.sql",
-              "RelativeDocumentMoniker": "libreria_academia\\query.sql",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\query.sql",
-              "RelativeToolTip": "libreria_academia\\query.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-10-01T21:13:34.076Z"
+              "Title": "SueldosController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Controllers\\SueldosController.cs",
+              "RelativeDocumentMoniker": "servicios_academia\\Controllers\\SueldosController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Controllers\\SueldosController.cs",
+              "RelativeToolTip": "servicios_academia\\Controllers\\SueldosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T21:24:27.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dbconexion.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\nucleo\\Dbconexion.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\nucleo\\Dbconexion.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\nucleo\\Dbconexion.cs",
+              "RelativeToolTip": "libreria_academia\\nucleo\\Dbconexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T21:08:44.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EntrenadoresPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\prueba_academia\\pruebas\\EntrenadoresPrueba.cs",
+              "RelativeDocumentMoniker": "prueba_academia\\pruebas\\EntrenadoresPrueba.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\prueba_academia\\pruebas\\EntrenadoresPrueba.cs",
+              "RelativeToolTip": "prueba_academia\\pruebas\\EntrenadoresPrueba.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T20:18:40.589Z"
             }
           ]
         }

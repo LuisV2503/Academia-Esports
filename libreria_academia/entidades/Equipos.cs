@@ -5,11 +5,11 @@ namespace libreria_academia.entidades
 {
     public class Equipos
     {
-        public int id { get; set; }
-        public string Nombre { get; set; }
-        public string Siglas { get; set; }
-        public string Descripcion { get; set; }
-        public DateTime FechaCrea { get; set; }
+        public int? Id { get; set; }
+        public string? Nombre { get; set; }
+        public string? Siglas { get; set; }
+        public string? Descripcion { get; set; }
+        public DateTime? FechaCrea { get; set; }
 
         public List<Jugadores> Jugadores { get; set; } = new List<Jugadores>();
         public List<Entrenadores> Entrenadores { get; set; } = new List<Entrenadores>();

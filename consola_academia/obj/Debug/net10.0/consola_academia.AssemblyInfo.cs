@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("consola_academia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09dbb752d8b609bef936a0a8ab547316929df908")]
 [assembly: System.Reflection.AssemblyProductAttribute("consola_academia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("consola_academia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
