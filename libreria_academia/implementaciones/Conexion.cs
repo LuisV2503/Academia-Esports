@@ -16,7 +16,7 @@ namespace libreria_academia.implementaciones
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Personas <-> Sueldos (1 a 1)
+            // Personas <-> Sueldos (1 a muchos)
             modelBuilder.Entity<Personas>()
             .HasOne(p => p._sueldo)
             .WithMany(s => s.Personas)

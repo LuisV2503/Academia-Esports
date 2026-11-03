@@ -1,0 +1,31 @@
+﻿@page
+@model front_academia.Pages.Ventanas.SueldosModel
+@{
+    ViewData["Title"] = "Sueldos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Sueldos</h1>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Valor</th>
+
+        </tr>
+
+        @if (Model != null && Model.Lista != null)
+        {
+            foreach (var elemento in Model.Lista)
+            {
+                <tr>
+                    <td>@elemento.Id</td>
+                    <td>@elemento.Valor</td>
+                </tr>
+            }
+        }
+
+                
+    </table>
+
+</div>

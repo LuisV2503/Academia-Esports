@@ -78,3 +78,4 @@ C:\Users\Administrator\Desktop\Academia\consola_academia\obj\Debug\net10.0\refin
 C:\Users\Administrator\Desktop\Academia\consola_academia\obj\Debug\net10.0\consola_academia.pdb
 C:\Users\Administrator\Desktop\Academia\consola_academia\obj\Debug\net10.0\consola_academia.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\Academia\consola_academia\obj\Debug\net10.0\ref\consola_academia.dll
+C:\Users\Administrator\Desktop\Academia\consola_academia\obj\Debug\net10.0\consola_academia.sourcelink.json
