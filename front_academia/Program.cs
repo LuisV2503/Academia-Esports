@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IComunicaciones, Comunicaciones>();
 builder.Services.AddScoped<ISueldosPresentacion, SueldosPresentacion>();
+builder.Services.AddScoped<IPersonasPresentacion, PersonasPresentacion>();
 
 var app = builder.Build();
 
