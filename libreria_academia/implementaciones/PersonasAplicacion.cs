@@ -26,6 +26,9 @@ namespace libreria_academia.implementaciones
             if (entidad.FechaNacimiento == null)
                 entidad.FechaNacimiento = DateTime.Now;
 
+            if (!this.conexion.Sueldos!.Any(x => x.Id == entidad.Sueldo))
+                throw new Exception("Sueldo invalido");
+
             var entry = this.conexion!.Entry<Personas>(entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
@@ -59,6 +62,9 @@ namespace libreria_academia.implementaciones
                 entidad.Sueldo == null || entidad.Sueldo == 0)
                 throw new Exception("Faltan valores");
 
+            if (!this.conexion.Sueldos!.Any(x => x.Id == entidad.Sueldo))
+                throw new Exception("Sueldo invalido");
+
             if (entidad.FechaNacimiento == null)
                 entidad.FechaNacimiento = DateTime.Now;
 
@@ -66,6 +72,15 @@ namespace libreria_academia.implementaciones
             this.conexion.SaveChanges();
 
             return entidad;
+        }
+        public List<Personas> Buscar(Personas entidad)
+        {
+            var nombre = entidad.Nombre ?? "";
+
+            return this.conexion.Personas!
+                .Include(x => x._sueldo)
+                .Where(x => x.Nombre!.Contains(nombre))
+                .ToList();
         }
     }
 }

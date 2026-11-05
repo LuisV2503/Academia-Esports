@@ -6,10 +6,13 @@ namespace aplicacion_academia.interfaces
     public class PersonasPresentacion : IPersonasPresentacion
     {
         private IComunicaciones IComunicaciones;
+        private ISueldosPresentacion ISueldosPresentacion;
 
-        public PersonasPresentacion(IComunicaciones IComunicaciones)
+        public PersonasPresentacion(IComunicaciones IComunicaciones,
+            ISueldosPresentacion ISueldosPresentacion)
         {
             this.IComunicaciones = IComunicaciones;
+            this.ISueldosPresentacion = ISueldosPresentacion;
         }
 
         public Personas Actualizar(Personas entidad)
@@ -19,6 +22,9 @@ namespace aplicacion_academia.interfaces
 
             if (Validar(entidad))
                 throw new Exception("Falta informacion");
+
+            if (!this.ISueldosPresentacion.Consultar().Any(x => x.Id == entidad.Sueldo))
+                throw new Exception("Sueldo invalido");
 
             var task = this.IComunicaciones.Ejecutar<Personas>(
                 "Personas/Actualizar",
@@ -68,6 +74,9 @@ namespace aplicacion_academia.interfaces
 
             if (Validar(entidad))
                 throw new Exception("Falta informacion");
+
+            if (!this.ISueldosPresentacion.Consultar().Any(x => x.Id == entidad.Sueldo))
+                throw new Exception("Sueldo invalido");
 
             var task = this.IComunicaciones.Ejecutar<Personas>(
                 "Personas/Insertar",

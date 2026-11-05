@@ -30,8 +30,11 @@ namespace libreria_academia.implementaciones
 
         public Sueldos Borrar(Sueldos entidad)
         {
-            if (entidad.Id == 0)
+            if (entidad.Id == 0 || entidad.Id == null)
                 throw new Exception("No se guardo");
+
+            if (this.conexion.Personas!.Any(x => x.Sueldo == entidad.Id))
+                throw new Exception("Sueldo en uso");
 
             this.conexion.Sueldos!.Remove(entidad!);
             this.conexion.SaveChanges();
@@ -56,6 +59,16 @@ namespace libreria_academia.implementaciones
             this.conexion.SaveChanges();
 
             return entidad;
+        }
+
+        public List<Sueldos> Buscar(Sueldos entidad)
+        {
+            if (entidad.Valor == null || entidad.Valor == 0)
+                return this.conexion.Sueldos!.ToList();
+
+            return this.conexion.Sueldos!
+                .Where(x => x.Valor == entidad.Valor)
+                .ToList();
         }
     }
 }

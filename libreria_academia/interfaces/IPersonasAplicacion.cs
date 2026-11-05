@@ -9,5 +9,6 @@ namespace libreria_academia.interfaces
         Personas Actualizar(Personas entidad);
         List<Personas> Consultar();
         Personas Borrar(Personas entidad);
+        List<Personas> Buscar(Personas entidad);
     }
 }

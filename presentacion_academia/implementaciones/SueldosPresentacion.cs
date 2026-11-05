@@ -33,6 +33,15 @@ namespace aplicacion_academia.interfaces
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se ha guardado");
 
+            var personas = this.IComunicaciones.Ejecutar<List<Personas>>(
+                "Personas/Consultar",
+                null,
+                HttpMethod.Get);
+            personas.Wait();
+
+            if (personas.Result.Any(x => x.Sueldo == entidad.Id))
+                throw new Exception("Sueldo en uso");
+
             var task = this.IComunicaciones.Ejecutar<Sueldos>(
                 "Sueldos/Borrar",
                 entidad,

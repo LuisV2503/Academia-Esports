@@ -11,8 +11,4 @@
 		<ProjectReference Include="..\presentacion_academia\presentacion_academia.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<Folder Include="Pages\Emergentes\" />
-	</ItemGroup>
-
 </Project>

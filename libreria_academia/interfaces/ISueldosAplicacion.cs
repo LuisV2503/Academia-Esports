@@ -11,5 +11,6 @@ namespace libreria_academia.interfaces
         Sueldos Actualizar(Sueldos entidad);
         List<Sueldos> Consultar();
         Sueldos Borrar(Sueldos entidad);
+        List<Sueldos> Buscar(Sueldos entidad);
     }
 }

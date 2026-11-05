@@ -38,5 +38,11 @@ namespace servicios_academia.Controllers
         {
             return this.ISueldosAplicacion.Borrar(entidad);
         }
+
+        [HttpPost]
+        public List<Sueldos> Buscar(Sueldos entidad)
+        {
+            return this.ISueldosAplicacion.Buscar(entidad);
+        }
     }
 }

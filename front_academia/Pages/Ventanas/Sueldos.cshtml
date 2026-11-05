@@ -3,29 +3,113 @@
 @{
     ViewData["Title"] = "Sueldos";
 }
+<form method="post"
+      enctype="multipart/form-data">
 
-<div class="text-center">
-    <h1 class="display-4">Sueldos</h1>
+    <div class="text-center">
+        <h1 class="display-4">Sueldos</h1>
 
-    <table>
-        <tr>
-            <th>Id</th>
-            <th>Valor</th>
+        <input type="submit"
+               value="Buscar"
+               class="btn btn-secondary"
+               asp-page-handler="BtBuscar" />
+        <input type="submit"
+               value="Nuevo"
+               class="btn btn-secondary"
+               asp-page-handler="BtNuevo" />
+        <input type="submit"
+               value="Guardar"
+               class="btn btn-secondary"
+               asp-page-handler="BtGuardar" />
+        <input id="flValor"
+               placeholder="Valor"
+               asp-for="@Model.Filtro!.Valor" />
 
-        </tr>
-
-        @if (Model != null && Model.Lista != null)
+        @if (ViewData.ContainsKey("Mensaje"))
         {
-            foreach (var elemento in Model.Lista)
-            {
-                <tr>
-                    <td>@elemento.Id</td>
-                    <td>@elemento.Valor</td>
-                </tr>
-            }
+            @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
+            ;
         }
 
-                
-    </table>
+        @if (Model.Formulario || Model.Borrar)
+        {
+            <input id="nmId"
+                   type="hidden"
+                   asp-for="@Model.Actual!.Id" />
+        }
 
-</div>
+        @if (Model.Formulario)
+        {
+            <div>
+                <h3>Sueldo</h3>
+
+                <label>
+                    Valor
+                </label>
+                <input id="nmValor"
+                       asp-for="@Model.Actual!.Valor" />
+                <br />
+            </div>
+        }
+
+        @if (Model.Borrar)
+        {
+            <div class="popup">
+                <div class="pp_del_inner">
+                    <h3>Mensaje</h3>
+
+                    <h4>
+                        ¿Desea borrar la entidad...?
+                    </h4>
+                    <h6>
+                        @Model.Actual!.Valor
+                    </h6>
+                    <input type="submit"
+                           value="Cancelar"
+                           class="btn btn-secondary"
+                           asp-page-handler="BtBuscar" />
+                    <input type="submit"
+                           value="Borrar"
+                           class="btn btn-secondary"
+                           asp-page-handler="BtBorrar" />
+                </div>
+            </div>
+        }
+
+        @if (!Model.Formulario)
+        {
+            <div class="containers_vn panel panel-default">
+                <table class="tb_data table table-striped table-bordered table-hover">
+                    <tr>
+                        <th>Id</th>
+                        <th>Valor</th>
+                        <th>Acción</th>
+                    </tr>
+                    @if (Model != null && Model.Lista != null)
+                    {
+                        foreach (var elemento in Model.Lista)
+                        {
+                            <tr>
+                                <td>@elemento.Id</td>
+                                <td>@elemento.Valor</td>
+                                <td>
+                                    <input type="submit"
+                                           value="Editar"
+                                           class="btn btn-secondary"
+                                           asp-page-handler="BtEditar"
+                                           asp-route-data="@elemento.Id" />
+                                    <input type="submit"
+                                           value="Borrar"
+                                           class="btn btn-secondary"
+                                           asp-page-handler="BtPregBorrar"
+                                           asp-route-data="@elemento.Id" />
+                                </td>
+                            </tr>
+                        }
+                    }
+                </table>
+            </div>
+        }
+
+    </div>
+</form>
