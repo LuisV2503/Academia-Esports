@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Academia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\implementaciones\\sueldosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\implementaciones\\sueldosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|c:\\users\\administrator\\desktop\\academia\\front_academia\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|c:\\users\\administrator\\desktop\\academia\\front_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|c:\\users\\administrator\\desktop\\academia\\servicios_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|solutionrelative:servicios_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|c:\\users\\administrator\\desktop\\academia\\front_academia\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\implementaciones\\personasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\implementaciones\\personasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|c:\\users\\administrator\\desktop\\academia\\presentacion_academia\\implementaciones\\personaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|solutionrelative:presentacion_academia\\implementaciones\\personaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|c:\\users\\administrator\\desktop\\academia\\presentacion_academia\\interfaces\\ipersonaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|solutionrelative:presentacion_academia\\interfaces\\ipersonaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|c:\\users\\administrator\\desktop\\academia\\presentacion_academia\\implementaciones\\sueldospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|solutionrelative:presentacion_academia\\implementaciones\\sueldospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|c:\\users\\administrator\\desktop\\academia\\presentacion_academia\\interfaces\\ipersonaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|solutionrelative:presentacion_academia\\interfaces\\ipersonaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\implementaciones\\sueldosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\implementaciones\\sueldosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|c:\\users\\administrator\\desktop\\academia\\presentacion_academia\\implementaciones\\personaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|solutionrelative:presentacion_academia\\implementaciones\\personaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|c:\\users\\administrator\\desktop\\academia\\servicios_academia\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,18 +83,6 @@
       "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|c:\\users\\administrator\\desktop\\academia\\servicios_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|solutionrelative:servicios_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|c:\\users\\administrator\\desktop\\academia\\front_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|c:\\users\\administrator\\desktop\\academia\\front_academia\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\personas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\personas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -118,7 +122,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "front_academia\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "front_academia\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-06T08:21:51.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PersonasAplicacion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\PersonasAplicacion.cs",
               "RelativeDocumentMoniker": "libreria_academia\\implementaciones\\PersonasAplicacion.cs",
@@ -131,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IPersonasPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\interfaces\\IPersonasPresentacion.cs",
               "RelativeDocumentMoniker": "presentacion_academia\\interfaces\\IPersonasPresentacion.cs",
@@ -144,25 +161,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonasPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\PersonasPresentacion.cs",
-              "RelativeDocumentMoniker": "presentacion_academia\\implementaciones\\PersonasPresentacion.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\PersonasPresentacion.cs*",
-              "RelativeToolTip": "presentacion_academia\\implementaciones\\PersonasPresentacion.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Program.cs",
+              "RelativeDocumentMoniker": "front_academia\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Program.cs*",
+              "RelativeToolTip": "front_academia\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T09:27:19.282Z",
+              "WhenOpened": "2026-11-03T08:57:50.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "front_academia\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "front_academia\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-03T08:53:02.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Program.cs",
+              "RelativeDocumentMoniker": "servicios_academia\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Program.cs*",
+              "RelativeToolTip": "servicios_academia\\Program.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T22:54:02.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "SueldosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\SueldosPresentacion.cs",
               "RelativeDocumentMoniker": "presentacion_academia\\implementaciones\\SueldosPresentacion.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\SueldosPresentacion.cs*",
-              "RelativeToolTip": "presentacion_academia\\implementaciones\\SueldosPresentacion.cs*",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\SueldosPresentacion.cs",
+              "RelativeToolTip": "presentacion_academia\\implementaciones\\SueldosPresentacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-03T09:10:52.524Z",
@@ -170,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "SueldosAplicacion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\SueldosAplicacion.cs",
               "RelativeDocumentMoniker": "libreria_academia\\implementaciones\\SueldosAplicacion.cs",
@@ -178,12 +221,23 @@
               "RelativeToolTip": "libreria_academia\\implementaciones\\SueldosAplicacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T09:22:26.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T09:22:26.243Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "PersonasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\PersonasPresentacion.cs",
+              "RelativeDocumentMoniker": "presentacion_academia\\implementaciones\\PersonasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\PersonasPresentacion.cs",
+              "RelativeToolTip": "presentacion_academia\\implementaciones\\PersonasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T09:27:19.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PersonasController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Controllers\\PersonasController.cs",
               "RelativeDocumentMoniker": "servicios_academia\\Controllers\\PersonasController.cs",
@@ -191,12 +245,11 @@
               "RelativeToolTip": "servicios_academia\\Controllers\\PersonasController.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAAwCcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T09:22:39.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T09:22:39.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "IPersonasAplicacion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\interfaces\\IPersonasAplicacion.cs",
               "RelativeDocumentMoniker": "libreria_academia\\interfaces\\IPersonasAplicacion.cs",
@@ -204,12 +257,11 @@
               "RelativeToolTip": "libreria_academia\\interfaces\\IPersonasAplicacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T07:07:00.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T07:07:00.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Sueldos.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Ventanas\\Sueldos.cshtml",
               "RelativeDocumentMoniker": "front_academia\\Pages\\Ventanas\\Sueldos.cshtml",
@@ -217,12 +269,11 @@
               "RelativeToolTip": "front_academia\\Pages\\Ventanas\\Sueldos.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-03T08:50:23.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T08:50:23.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "LogConversor.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\nucleo\\LogConversor.cs",
               "RelativeDocumentMoniker": "libreria_academia\\nucleo\\LogConversor.cs",
@@ -230,12 +281,11 @@
               "RelativeToolTip": "libreria_academia\\nucleo\\LogConversor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T07:11:36.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T07:11:36.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Sueldos.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Ventanas\\Sueldos.cshtml.cs",
               "RelativeDocumentMoniker": "front_academia\\Pages\\Ventanas\\Sueldos.cshtml.cs",
@@ -243,12 +293,11 @@
               "RelativeToolTip": "front_academia\\Pages\\Ventanas\\Sueldos.cshtml.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAiwHQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T08:51:38.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T08:51:38.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ISueldosAplicacion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\interfaces\\ISueldosAplicacion.cs",
               "RelativeDocumentMoniker": "libreria_academia\\interfaces\\ISueldosAplicacion.cs",
@@ -256,12 +305,11 @@
               "RelativeToolTip": "libreria_academia\\interfaces\\ISueldosAplicacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T09:22:20.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T09:22:20.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "SueldosController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Controllers\\SueldosController.cs",
               "RelativeDocumentMoniker": "servicios_academia\\Controllers\\SueldosController.cs",
@@ -269,12 +317,11 @@
               "RelativeToolTip": "servicios_academia\\Controllers\\SueldosController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAIwC4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T07:57:27.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T07:57:27.188Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Personas.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Ventanas\\Personas.cshtml",
               "RelativeDocumentMoniker": "front_academia\\Pages\\Ventanas\\Personas.cshtml",
@@ -282,12 +329,11 @@
               "RelativeToolTip": "front_academia\\Pages\\Ventanas\\Personas.cshtml",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAI4AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-03T09:33:13.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T09:33:13.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Mensajes.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Emergentes\\Mensajes.cshtml",
               "RelativeDocumentMoniker": "front_academia\\Pages\\Emergentes\\Mensajes.cshtml",
@@ -295,12 +341,11 @@
               "RelativeToolTip": "front_academia\\Pages\\Emergentes\\Mensajes.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-05T07:31:05.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T07:31:05.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Personas.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Ventanas\\Personas.cshtml.cs",
               "RelativeDocumentMoniker": "front_academia\\Pages\\Ventanas\\Personas.cshtml.cs",
@@ -308,12 +353,11 @@
               "RelativeToolTip": "front_academia\\Pages\\Ventanas\\Personas.cshtml.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAIwHUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T09:34:10.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T09:34:10.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "front_academia\\wwwroot\\css\\site.css",
@@ -321,48 +365,11 @@
               "RelativeToolTip": "front_academia\\wwwroot\\css\\site.css",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-05T07:13:22.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T07:13:22.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "front_academia\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "front_academia\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAswCAAAABwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-03T08:53:02.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Program.cs",
-              "RelativeDocumentMoniker": "servicios_academia\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Program.cs",
-              "RelativeToolTip": "servicios_academia\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T22:54:02.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Program.cs",
-              "RelativeDocumentMoniker": "front_academia\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Program.cs",
-              "RelativeToolTip": "front_academia\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T08:57:50.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Personas.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Personas.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Personas.cs",
@@ -374,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\Conexion.cs",
               "RelativeDocumentMoniker": "libreria_academia\\implementaciones\\Conexion.cs",
@@ -386,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IComunicaciones.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\interfaces\\IComunicaciones.cs",
               "RelativeDocumentMoniker": "presentacion_academia\\interfaces\\IComunicaciones.cs",
@@ -398,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Comunicaciones.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\Comunicaciones.cs",
               "RelativeDocumentMoniker": "presentacion_academia\\implementaciones\\Comunicaciones.cs",
@@ -410,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "presentacion_academia.csproj",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\presentacion_academia.csproj",
               "RelativeDocumentMoniker": "presentacion_academia\\presentacion_academia.csproj",
@@ -422,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "libreria_academia.csproj",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\libreria_academia.csproj",
               "RelativeDocumentMoniker": "libreria_academia\\libreria_academia.csproj",
@@ -434,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "front_academia.csproj",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\front_academia.csproj",
               "RelativeDocumentMoniker": "front_academia\\front_academia.csproj",
