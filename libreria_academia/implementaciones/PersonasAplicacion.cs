@@ -1,4 +1,4 @@
-﻿using libreria_academia.entidades;
+using libreria_academia.entidades;
 using libreria_academia.interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -40,6 +40,14 @@ namespace libreria_academia.implementaciones
             if (entidad.Id == 0 || entidad.Id == null)
                 throw new Exception("No se guardo");
 
+            if (this.conexion.Jugadores!.Any(x => x.Persona == entidad.Id) ||
+                this.conexion.Entrenadores!.Any(x => x.Persona == entidad.Id) ||
+                this.conexion.Analistas!.Any(x => x.Persona == entidad.Id) ||
+                this.conexion.Psicologos!.Any(x => x.Persona == entidad.Id) ||
+                this.conexion.Fisioterapeutas!.Any(x => x.Persona == entidad.Id) ||
+                this.conexion.Organizadores!.Any(x => x.Persona == entidad.Id))
+                throw new Exception("Persona en uso");
+
             this.conexion.Personas!.Remove(entidad!);
             this.conexion.SaveChanges();
             return entidad;
@@ -51,7 +59,7 @@ namespace libreria_academia.implementaciones
             .Include(x => x._sueldo)
             .ToList();
         }
-            
+
         public Personas Insertar(Personas entidad)
         {
             if (entidad.Id != null && entidad.Id != 0)
@@ -73,6 +81,7 @@ namespace libreria_academia.implementaciones
 
             return entidad;
         }
+
         public List<Personas> Buscar(Personas entidad)
         {
             var nombre = entidad.Nombre ?? "";

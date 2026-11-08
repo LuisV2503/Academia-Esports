@@ -8,7 +8,11 @@
             if (ViewData == null)
                 return;
 
-            var mensaje = ex.Message;
+            var error = ex;
+            while (error is AggregateException && error.InnerException != null)
+                error = error.InnerException;
+
+            var mensaje = error.Message;
             if (mensaje.Length >= 100)
                 mensaje = mensaje.Substring(0, 100);
 

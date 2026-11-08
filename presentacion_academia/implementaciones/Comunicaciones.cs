@@ -26,7 +26,12 @@ namespace presentacion_academia.implementaciones
             var message = await cliente_http.SendAsync(peticion);
 
             if (!message.IsSuccessStatusCode)
-                throw new Exception("Error Comunicacion");
+            {
+                var error = await message.Content.ReadAsStringAsync();
+                throw new Exception(string.IsNullOrWhiteSpace(error)
+                    ? "Error Comunicacion"
+                    : error);
+            }
 
             var respuesta = await message.Content.ReadAsStringAsync();
             cliente_http.Dispose();
