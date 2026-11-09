@@ -1,4 +1,5 @@
 CREATE DATABASE db_academia
+GO
 USE db_academia
 GO
 

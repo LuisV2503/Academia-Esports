@@ -29,6 +29,7 @@ namespace libreria_academia.implementaciones
             if (!this.conexion.Sueldos!.Any(x => x.Id == entidad.Sueldo))
                 throw new Exception("Sueldo invalido");
 
+
             var entry = this.conexion!.Entry<Personas>(entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
