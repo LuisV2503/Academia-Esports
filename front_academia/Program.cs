@@ -1,10 +1,20 @@
 using aplicacion_academia.interfaces;
+using front_academia.Filtros;
 using presentacion_academia.interfaces;
 using presentacion_academia.implementaciones;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddRazorPages();
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+builder.Services.AddRazorPages()
+    .AddMvcOptions(options => options.Filters.Add<FiltroSesion>());
 builder.Services.AddScoped<IComunicaciones, Comunicaciones>();
 builder.Services.AddScoped<ISueldosPresentacion, SueldosPresentacion>();
 builder.Services.AddScoped<IPersonasPresentacion, PersonasPresentacion>();
@@ -27,6 +37,9 @@ builder.Services.AddScoped<IEquipos_AcademiasPresentacion, Equipos_AcademiasPres
 builder.Services.AddScoped<IEmpresas_AcademiasPresentacion, Empresas_AcademiasPresentacion>();
 builder.Services.AddScoped<IEmpresas_Academias_EventosPresentacion, Empresas_Academias_EventosPresentacion>();
 builder.Services.AddScoped<IEventos_OrganizadoresPresentacion, Eventos_OrganizadoresPresentacion>();
+builder.Services.AddScoped<IRolesPresentacion, RolesPresentacion>();
+builder.Services.AddScoped<IUsuariosPresentacion, UsuariosPresentacion>();
+builder.Services.AddScoped<ILoginsPresentacion, LoginsPresentacion>();
 
 var app = builder.Build();
 
@@ -38,6 +51,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseSession();
 app.UseAuthorization();
 app.MapStaticAssets();
 app.MapRazorPages()

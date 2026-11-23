@@ -7,8 +7,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\libreria_academia\libreria_academia.csproj" />
-		<ProjectReference Include="..\presentacion_academia\presentacion_academia.csproj" />
+	  <ProjectReference Include="..\libreria_academia\libreria_academia.csproj" />
+	  <ProjectReference Include="..\presentacion_academia\presentacion_academia.csproj" />
 	</ItemGroup>
 
 </Project>

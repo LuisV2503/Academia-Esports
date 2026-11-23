@@ -229,3 +229,62 @@ IF @nombre IS NOT NULL
     EXEC('ALTER TABLE [dbo].[Personas] DROP CONSTRAINT [' + @nombre + ']');
 ELSE
     PRINT 'No hay ninguna restricción UNIQUE en Personas';
+
+	-- Tablas de acceso: Roles, Usuarios y Logins
+-- Ejecutar con la base db_academia seleccionada.
+
+
+
+USE db_academia;
+GO
+
+-- Roles: catálogo (muchos usuarios pueden compartir un rol)
+CREATE TABLE [Roles] (
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[Nombre] NVARCHAR(50) NOT NULL UNIQUE,
+	[Descripcion] NVARCHAR(200) NOT NULL
+);
+
+INSERT INTO [Roles] ([Nombre], [Descripcion])
+VALUES ('Administrador', 'Acceso total a la aplicación');
+
+INSERT INTO [Roles] ([Nombre], [Descripcion])
+VALUES ('Usuario', 'Acceso limitado a la aplicación');
+
+-- Usuarios: cualquier persona que use la aplicación (interna o externa a la academia)
+CREATE TABLE [Usuarios] (
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[Nombre] NVARCHAR(50) NOT NULL,
+	[Correo] NVARCHAR(100) NOT NULL UNIQUE,
+	[Activo] BIT NOT NULL,
+	[Rol] INT NOT NULL REFERENCES [Roles]([Id])
+);
+
+INSERT INTO [Usuarios] ([Nombre], [Correo], [Activo], [Rol])
+VALUES ('Administrador', 'admin@academia.com', 1, 1);
+
+INSERT INTO [Usuarios] ([Nombre], [Correo], [Activo], [Rol])
+VALUES ('Usuario de prueba', 'usuario@academia.com', 1, 2);
+
+-- Logins: credenciales de cada usuario (1 a 1). Sin usuario no puede existir un login.
+-- Contrasena guarda el hash SHA-256 en hexadecimal (64 caracteres), nunca la clave en texto plano.
+CREATE TABLE [Logins] (
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[Usuario] INT NOT NULL UNIQUE REFERENCES [Usuarios]([Id]),
+	[Contrasena] NVARCHAR(64) NOT NULL,
+	[Activo] BIT NOT NULL
+);
+
+-- Claves de ejemplo:  admin@academia.com -> Admin123   |   usuario@academia.com -> Usuario123
+-- (los literales van sin N para que el hash coincida con el que calcula la aplicación en UTF-8)
+INSERT INTO [Logins] ([Usuario], [Contrasena], [Activo])
+VALUES (1, CONVERT(NVARCHAR(64), HASHBYTES('SHA2_256', 'Admin123'), 2), 1);
+
+INSERT INTO [Logins] ([Usuario], [Contrasena], [Activo])
+VALUES (2, CONVERT(NVARCHAR(64), HASHBYTES('SHA2_256', 'Usuario123'), 2), 1);
+
+-- Verificación
+SELECT u.[Id], u.[Nombre], u.[Correo], r.[Nombre] AS [Rol], l.[Contrasena], l.[Activo]
+FROM [Usuarios] u
+JOIN [Roles] r ON r.[Id] = u.[Rol]
+JOIN [Logins] l ON l.[Usuario] = u.[Id];

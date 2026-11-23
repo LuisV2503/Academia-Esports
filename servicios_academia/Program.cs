@@ -39,6 +39,9 @@ builder.Services.AddScoped<IEquipos_AcademiasAplicacion, Equipos_AcademiasAplica
 builder.Services.AddScoped<IEmpresas_AcademiasAplicacion, Empresas_AcademiasAplicacion>();
 builder.Services.AddScoped<IEmpresas_Academias_EventosAplicacion, Empresas_Academias_EventosAplicacion>();
 builder.Services.AddScoped<IEventos_OrganizadoresAplicacion, Eventos_OrganizadoresAplicacion>();
+builder.Services.AddScoped<IRolesAplicacion, RolesAplicacion>();
+builder.Services.AddScoped<IUsuariosAplicacion, UsuariosAplicacion>();
+builder.Services.AddScoped<ILoginsAplicacion, LoginsAplicacion>();
 
 var app = builder.Build();
 

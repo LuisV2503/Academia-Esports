@@ -1,12 +1,91 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Academia\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|c:\\users\\administrator\\desktop\\academia\\front_academia\\filtros\\filtrosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\filtros\\filtrosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|c:\\users\\administrator\\desktop\\academia\\front_academia\\pages\\ventanas\\logins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\pages\\ventanas\\logins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FiltroSesion.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Filtros\\FiltroSesion.cs",
+              "RelativeDocumentMoniker": "front_academia\\Filtros\\FiltroSesion.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Filtros\\FiltroSesion.cs",
+              "RelativeToolTip": "front_academia\\Filtros\\FiltroSesion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T15:11:02.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "query.sql ",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\query.sql",
+              "RelativeDocumentMoniker": "libreria_academia\\query.sql",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\query.sql",
+              "RelativeToolTip": "libreria_academia\\query.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-11-23T00:21:17.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Usuarios.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Usuarios.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Usuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-22T23:03:51.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Logins.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
+              "RelativeDocumentMoniker": "front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
+              "RelativeToolTip": "front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswAsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-22T23:01:51.58Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,4 +1,4 @@
-﻿using libreria_academia.entidades;
+using libreria_academia.entidades;
 using libreria_academia.interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -161,6 +161,18 @@ namespace libreria_academia.implementaciones
                 .HasOne(e => e._eventos)
                 .WithMany(ev => ev.Entretenimientos)
                 .HasForeignKey(e => e.Evento);
+
+            // Usuarios <-> Roles (muchos a 1)
+            modelBuilder.Entity<Usuarios>()
+                .HasOne(u => u._rol)
+                .WithMany(r => r.Usuarios)
+                .HasForeignKey(u => u.Rol);
+
+            // Logins <-> Usuarios (1 a 1)
+            modelBuilder.Entity<Logins>()
+                .HasOne(l => l._usuario)
+                .WithOne()
+                .HasForeignKey<Logins>(l => l.Usuario);
         }
 
         public DbSet<entidades.Sueldos>? Sueldos { get; set; }
@@ -184,5 +196,8 @@ namespace libreria_academia.implementaciones
         public DbSet<Eventos>? Eventos { get; set; }
         public DbSet<Eventos_Organizadores>? Eventos_Organizadores { get; set; }
         public DbSet<Entretenimientos>? Entretenimientos { get; set; }
+        public DbSet<Roles>? Roles { get; set; }
+        public DbSet<Usuarios>? Usuarios { get; set; }
+        public DbSet<Logins>? Logins { get; set; }
     }
 }
