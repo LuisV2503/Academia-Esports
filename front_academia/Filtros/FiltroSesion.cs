@@ -19,7 +19,8 @@ namespace front_academia.Filtros
             "/Ventanas/Roles",
             "/Ventanas/Usuarios",
             "/Ventanas/Logins",
-            "/Ventanas/Auditorias"
+            "/Ventanas/Auditorias",
+            "/Ventanas/Reportes"
         };
 
         private ILoginsPresentacion ILoginsPresentacion;

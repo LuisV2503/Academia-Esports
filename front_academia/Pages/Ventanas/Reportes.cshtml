@@ -1,0 +1,16 @@
+@page
+@model front_academia.Pages.Ventanas.ReportesModel
+@{
+    ViewData["Title"] = "Exportar PDF";
+}
+<div class="text-center">
+    <h1 class="display-4">Exportar PDF</h1>
+
+    @if (ViewData.ContainsKey("Mensaje"))
+    {
+        @await Html.PartialAsync("../Emergentes/Mensajes.cshtml");
+    }
+
+    <p>No se pudo generar el reporte.</p>
+    <a class="btn btn-secondary" asp-page="/Ventanas/Reportes">Intentar de nuevo</a>
+</div>

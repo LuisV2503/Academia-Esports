@@ -1,5 +1,6 @@
 using aplicacion_academia.interfaces;
 using front_academia.Filtros;
+using front_academia.Servicios;
 using presentacion_academia.interfaces;
 using presentacion_academia.implementaciones;
 
@@ -42,6 +43,7 @@ builder.Services.AddScoped<IUsuariosPresentacion, UsuariosPresentacion>();
 builder.Services.AddScoped<ILoginsPresentacion, LoginsPresentacion>();
 builder.Services.AddScoped<IContextoUsuario, ContextoUsuario>();
 builder.Services.AddScoped<IAuditoriasPresentacion, AuditoriasPresentacion>();
+builder.Services.AddScoped<ReportePdf>();
 
 var app = builder.Build();
 

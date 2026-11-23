@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Academia\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|c:\\users\\administrator\\desktop\\academia\\front_academia\\front_academia.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\front_academia.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|c:\\users\\administrator\\desktop\\academia\\presentacion_academia\\presentacion_academia.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|solutionrelative:presentacion_academia\\presentacion_academia.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|c:\\users\\administrator\\desktop\\academia\\presentacion_academia\\implementaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|solutionrelative:presentacion_academia\\implementaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -138,11 +146,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "presentacion_academia",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\presentacion_academia.csproj",
+              "RelativeDocumentMoniker": "presentacion_academia\\presentacion_academia.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\presentacion_academia.csproj",
+              "RelativeToolTip": "presentacion_academia\\presentacion_academia.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-23T21:20:43.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "front_academia",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\front_academia.csproj",
+              "RelativeDocumentMoniker": "front_academia\\front_academia.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\front_academia.csproj",
+              "RelativeToolTip": "front_academia\\front_academia.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-23T21:20:34.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Comunicaciones.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\Comunicaciones.cs",
               "RelativeDocumentMoniker": "presentacion_academia\\implementaciones\\Comunicaciones.cs",
@@ -155,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AuditoriasAplicacion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\AuditoriasAplicacion.cs",
               "RelativeDocumentMoniker": "libreria_academia\\implementaciones\\AuditoriasAplicacion.cs",
@@ -168,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Tipo.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Tipo.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Tipo.cs",
@@ -181,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Sueldos.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Sueldos.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Sueldos.cs",
@@ -194,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Roles.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Roles.cs",
@@ -207,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Psicologos.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Psicologos.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Psicologos.cs",
@@ -220,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Personas.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Personas.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Personas.cs",
@@ -233,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Organizadores.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Organizadores.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Organizadores.cs",
@@ -246,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Logins.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Logins.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Logins.cs",
@@ -259,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Usuarios.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Usuarios.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Usuarios.cs",
@@ -272,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Jugadores.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Jugadores.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Jugadores.cs",
@@ -285,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Juegos.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Juegos.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Juegos.cs",
@@ -298,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Fisioterapeutas.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Fisioterapeutas.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Fisioterapeutas.cs",
@@ -311,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Eventos_Organizadores.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Eventos_Organizadores.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Eventos_Organizadores.cs",
@@ -324,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Eventos.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Eventos.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Eventos.cs",
@@ -337,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Equipos_Juegos.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos_Juegos.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Equipos_Juegos.cs",
@@ -350,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Equipos_Empresas.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos_Empresas.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Equipos_Empresas.cs",
@@ -363,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Equipos_Academias.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos_Academias.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Equipos_Academias.cs",
@@ -376,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Equipos.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Equipos.cs",
@@ -389,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Entretenimientos.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Entretenimientos.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Entretenimientos.cs",
@@ -402,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Entrenadores.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Entrenadores.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Entrenadores.cs",
@@ -415,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Empresas_Academias_Eventos.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Empresas_Academias_Eventos.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Empresas_Academias_Eventos.cs",
@@ -428,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Empresas_Academias.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Empresas_Academias.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Empresas_Academias.cs",
@@ -441,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Empresas.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Empresas.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Empresas.cs",
@@ -454,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Auditorias.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Auditorias.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Auditorias.cs",
@@ -467,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Analistas.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Analistas.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Analistas.cs",
@@ -480,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Academias.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Academias.cs",
               "RelativeDocumentMoniker": "libreria_academia\\entidades\\Academias.cs",
@@ -493,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "UsuarioActual.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Servicios\\UsuarioActual.cs",
               "RelativeDocumentMoniker": "servicios_academia\\Servicios\\UsuarioActual.cs",
@@ -506,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "FiltroSesion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Filtros\\FiltroSesion.cs",
               "RelativeDocumentMoniker": "front_academia\\Filtros\\FiltroSesion.cs",
@@ -519,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "query.sql ",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\query.sql",
               "RelativeDocumentMoniker": "libreria_academia\\query.sql",
@@ -531,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Logins.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
               "RelativeDocumentMoniker": "front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
