@@ -1,67 +1,126 @@
 @page
 @model front_academia.Pages.IndexModel
 @{
-    ViewData["Title"] = "Iniciar sesión";
+    ViewData["Title"] = Model.EstaLogueado ? "Inicio" : "Iniciar sesión";
 }
 
-<div class="row justify-content-center">
-    <div class="col-md-5">
+@if (!Model.EstaLogueado)
+{
+    <div class="row justify-content-center">
+        <div class="col-md-5">
 
-        @if (ViewData.ContainsKey("Mensaje"))
+            @if (ViewData.ContainsKey("Mensaje"))
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewData["Mensaje"]
+                </div>
+            }
+
+            <div class="gm-login">
+                <h2 class="text-center mb-4 gm-title">Academia Esports</h2>
+
+                <form method="post">
+                    <div class="form-group mb-3">
+                        <label class="control-label">
+                            Correo:
+                        </label>
+                        <input asp-for="@Model.Correo"
+                               class="form-control" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="control-label">
+                            Contraseña:
+                        </label>
+                        <input type="password"
+                               asp-for="@Model.Contrasena"
+                               class="form-control" />
+                    </div>
+
+                    <input type="submit"
+                           value="Limpiar"
+                           asp-page-handler="BtClean"
+                           class="btn btn-secondary" />
+                    <input type="submit"
+                           value="Entrar"
+                           asp-page-handler="BtEnter"
+                           class="btn btn-primary" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+}
+else
+{
+    <div class="gm-hero">
+        <h1 class="display-4">Bienvenido, @Model.NombreUsuario</h1>
+        <span class="gm-badge">@Model.RolUsuario</span>
+    </div>
+
+    @if (ViewData.ContainsKey("Mensaje"))
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewData["Mensaje"]
+        </div>
+    }
+
+    <div class="gm-stats">
+        @foreach (var total in Model.Totales)
         {
-            <div class="alert alert-danger" role="alert">
-                @ViewData["Mensaje"]
+            <div class="gm-stat">
+                <span class="gm-stat-num">@total.Cantidad</span>
+                <span class="gm-stat-lab">@total.Etiqueta</span>
             </div>
         }
+    </div>
 
-        @if (!Model.EstaLogueado)
+    <div class="gm-section">
+        <h3>Próximos eventos</h3>
+        @if (Model.ProximosEventos.Count == 0)
         {
-            <h2 class="text-center mb-4">Iniciar sesión</h2>
-
-            <form method="post">
-                <div class="form-group mb-3">
-                    <label class="control-label">
-                        Correo:
-                    </label>
-                    <input asp-for="@Model.Correo"
-                           class="form-control" />
-                </div>
-                <div class="form-group mb-3">
-                    <label class="control-label">
-                        Contraseña:
-                    </label>
-                    <input type="password"
-                           asp-for="@Model.Contrasena"
-                           class="form-control" />
-                </div>
-
-                <input type="submit"
-                       value="Limpiar"
-                       asp-page-handler="BtClean"
-                       class="btn btn-secondary" />
-                <input type="submit"
-                       value="Entrar"
-                       asp-page-handler="BtEnter"
-                       class="btn btn-primary" />
-            </form>
+            <p class="gm-vacio">No hay eventos próximos.</p>
         }
         else
         {
-            <div class="text-center">
-                <h1 class="display-4">
-                    Bienvenido
-                </h1>
-                <h4>@Model.NombreUsuario</h4>
-                <p>Rol: @Model.RolUsuario</p>
-
-                <form method="post">
-                    <input type="submit"
-                           value="Cerrar sesión"
-                           asp-page-handler="BtClose"
-                           class="btn btn-secondary" />
-                </form>
+            <div class="gm-events">
+                @foreach (var evento in Model.ProximosEventos)
+                {
+                    <div class="gm-event">
+                        <h4>@evento.Nombre</h4>
+                        <p>@evento.FechaIni?.ToString("dd/MM/yyyy HH:mm") - @evento.FechaFin?.ToString("dd/MM/yyyy HH:mm")</p>
+                        <p>@evento.Ciudad · @evento.Modalidad</p>
+                    </div>
+                }
             </div>
         }
-
     </div>
-</div>
+
+    <div class="gm-section">
+        <h3>Equipos</h3>
+        @if (Model.EquiposPanel.Count == 0)
+        {
+            <p class="gm-vacio">Todavía no hay equipos.</p>
+        }
+        else
+        {
+            <div class="gm-cards">
+                @foreach (var equipo in Model.EquiposPanel)
+                {
+                    <div class="gm-card">
+                        <div class="gm-card-img">
+                            @if (!string.IsNullOrEmpty(equipo.Imagen))
+                            {
+                                <img src="data:image/png;base64,@equipo.Imagen" alt="@equipo.Nombre" />
+                            }
+                        </div>
+                        <div class="gm-card-body">
+                            <h4>@equipo.Nombre</h4>
+                            <span>@equipo.Siglas</span>
+                            <p>@equipo.Descripcion</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+}
