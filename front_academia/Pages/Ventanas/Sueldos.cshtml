@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model front_academia.Pages.Ventanas.SueldosModel
 @{
     ViewData["Title"] = "Sueldos";
@@ -21,14 +21,13 @@
                value="Guardar"
                class="btn btn-secondary"
                asp-page-handler="BtGuardar" />
-        <input id="flValor"
+        <input id="flNombre"
                placeholder="Valor"
                asp-for="@Model.Filtro!.Valor" />
 
         @if (ViewData.ContainsKey("Mensaje"))
         {
-            @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
-            ;
+            @await Html.PartialAsync("../Emergentes/Mensajes.cshtml");
         }
 
         @if (Model.Formulario || Model.Borrar)
@@ -41,7 +40,7 @@
         @if (Model.Formulario)
         {
             <div>
-                <h3>Sueldo</h3>
+                <h3>Sueldos</h3>
 
                 <label>
                     Valor
@@ -49,6 +48,22 @@
                 <input id="nmValor"
                        asp-for="@Model.Actual!.Valor" />
                 <br />
+
+                <label>
+                    Imagen (máx. 500 KB)
+                </label>
+                @if (!string.IsNullOrEmpty(Model.Actual!.Imagen))
+                {
+                    <br />
+                    <img src="data:image/png;base64,@Model.Actual!.Imagen" style="max-height:120px;max-width:200px;" />
+                }
+                <br />
+                <input id="flImagen"
+                       type="file"
+                       accept="image/*"
+                       asp-for="FormFile" />
+                <br />
+
             </div>
         }
 
@@ -82,6 +97,7 @@
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
                         <th>Id</th>
+                        <th>Imagen</th>
                         <th>Valor</th>
                         <th>Acción</th>
                     </tr>
@@ -91,6 +107,12 @@
                         {
                             <tr>
                                 <td>@elemento.Id</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(elemento.Imagen))
+                                    {
+                                        <img src="data:image/png;base64,@elemento.Imagen" style="max-height:48px;max-width:80px;" />
+                                    }
+                                </td>
                                 <td>@elemento.Valor</td>
                                 <td>
                                     <input type="submit"

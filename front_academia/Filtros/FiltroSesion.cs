@@ -18,14 +18,17 @@ namespace front_academia.Filtros
         {
             "/Ventanas/Roles",
             "/Ventanas/Usuarios",
-            "/Ventanas/Logins"
+            "/Ventanas/Logins",
+            "/Ventanas/Auditorias"
         };
 
         private ILoginsPresentacion ILoginsPresentacion;
+        private IContextoUsuario IContextoUsuario;
 
-        public FiltroSesion(ILoginsPresentacion ILoginsPresentacion)
+        public FiltroSesion(ILoginsPresentacion ILoginsPresentacion, IContextoUsuario IContextoUsuario)
         {
             this.ILoginsPresentacion = ILoginsPresentacion;
+            this.IContextoUsuario = IContextoUsuario;
         }
 
         public Task OnPageHandlerSelectionAsync(PageHandlerSelectedContext context)
@@ -63,6 +66,9 @@ namespace front_academia.Filtros
                     new Usuarios() { Id = Convert.ToInt32(id) });
                 sesion.SetString("Nombre", usuario.Nombre ?? "");
                 sesion.SetString("Rol", usuario._rol?.Nombre ?? "");
+
+                // A partir de aquí, Comunicaciones envía este usuario al back (encabezado X-Usuario)
+                this.IContextoUsuario.Usuario = Convert.ToInt32(id);
             }
             catch (Exception ex)
             {

@@ -8,5 +8,6 @@ namespace libreria_academia.entidades
         public bool? Activo { get; set; }
         public int? Rol { get; set; }
         public Roles? _rol { get; set; }
+        public string? Imagen { get; set; }
     }
 }

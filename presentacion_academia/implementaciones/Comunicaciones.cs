@@ -1,19 +1,34 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System.Text;
 using presentacion_academia.interfaces;
+using aplicacion_academia.interfaces;
 
 namespace presentacion_academia.implementaciones
 {
     public class Comunicaciones : IComunicaciones
     {
+        // Dirección (puerto) donde corre la API (servicios_academia)
+        private const string UrlBase = "http://localhost:5235/";
+
+        private IContextoUsuario contexto;
+
+        public Comunicaciones(IContextoUsuario contexto)
+        {
+            this.contexto = contexto;
+        }
+
         public async Task<T> Ejecutar<T>(string url, object? entidad, HttpMethod metodo)
         {
-            url = "http://localhost:5235/" + url;
+            url = UrlBase + url;
 
             var cliente_http = new HttpClient();
             cliente_http.Timeout = new TimeSpan(0, 4, 0);
 
             var peticion = new HttpRequestMessage(metodo, url);
+
+            // Quién está haciendo la operación (para la auditoría del back)
+            if (this.contexto.Usuario != null)
+                peticion.Headers.Add("X-Usuario", this.contexto.Usuario.ToString());
 
             // Un GET no lleva cuerpo; POST, PUT y DELETE sí
             if (metodo != HttpMethod.Get)
@@ -43,6 +58,7 @@ namespace presentacion_academia.implementaciones
 
         private string Replace(string resp)
         {
+            // ":null" (y no "null" suelto) para no dañar imágenes en base64 que contengan esas letras
             return resp.Replace("\\\\r\\\\n", "")
                 .Replace("\\r\\n", "")
                 .Replace("\\", "")
@@ -60,7 +76,7 @@ namespace presentacion_academia.implementaciones
                 .Replace("'{", "{")
                 .Replace("\"", "")
                 .Replace("  ", "")
-                .Replace("null", "''");
+                .Replace(":null", ":''");
         }
     }
 }

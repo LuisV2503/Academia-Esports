@@ -32,6 +32,7 @@ namespace libreria_academia.interfaces
         public DbSet<Roles>? Roles { get; set; }
         public DbSet<Usuarios>? Usuarios { get; set; }
         public DbSet<Logins>? Logins { get; set; }
+        public DbSet<Auditorias>? Auditorias { get; set; }
 
         EntityEntry<T> Entry<T>(T entity) where T : class;
         int SaveChanges();

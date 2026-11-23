@@ -8,16 +8,27 @@ namespace libreria_academia.implementaciones
     public class EquiposAplicacion : IEquiposAplicacion
     {
         private IConexion conexion;
+        private IAuditoriasAplicacion auditoria;
 
-        public EquiposAplicacion(IConexion conexion)
+        public EquiposAplicacion(IConexion conexion, IAuditoriasAplicacion auditoria)
         {
             this.conexion = conexion;
+            this.auditoria = auditoria;
         }
 
         public Equipos Actualizar(Equipos entidad)
         {
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
+
+            // Si no se elige una imagen nueva, se conserva la que ya tiene
+            if (string.IsNullOrEmpty(entidad.Imagen))
+            {
+                entidad.Imagen = this.conexion.Equipos!
+                    .Where(x => x.Id == entidad.Id)
+                    .Select(x => x.Imagen)
+                    .FirstOrDefault();
+            }
 
             if (Validar(entidad))
                 throw new Exception("Faltan valores");
@@ -28,6 +39,8 @@ namespace libreria_academia.implementaciones
             var entry = this.conexion!.Entry<Equipos>(entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
+
+            this.auditoria.Registrar($"actualizó el equipo {entidad.Nombre} (Id {entidad.Id})");
             return entidad;
         }
 
@@ -46,8 +59,14 @@ namespace libreria_academia.implementaciones
                 this.conexion.Equipos_Academias!.Any(x => x.Equipo == entidad.Id))
                 throw new Exception("Equipo en uso");
 
+            // Se lee el registro antes de borrarlo para poder nombrarlo en la auditoría
+            var anterior = this.conexion.Equipos!
+                .FirstOrDefault(x => x.Id == entidad.Id) ?? entidad;
+
             this.conexion.Equipos!.Remove(entidad!);
             this.conexion.SaveChanges();
+
+            this.auditoria.Registrar($"borró el equipo {anterior.Nombre} (Id {anterior.Id})");
             return entidad;
         }
 
@@ -80,6 +99,7 @@ namespace libreria_academia.implementaciones
             this.conexion.Equipos!.Add(entidad!);
             this.conexion.SaveChanges();
 
+            this.auditoria.Registrar($"insertó el equipo {entidad.Nombre} (Id {entidad.Id})");
             return entidad;
         }
 
@@ -88,7 +108,8 @@ namespace libreria_academia.implementaciones
             return
                 string.IsNullOrEmpty(entidad.Nombre) ||
                 string.IsNullOrEmpty(entidad.Siglas) ||
-                string.IsNullOrEmpty(entidad.Descripcion);
+                string.IsNullOrEmpty(entidad.Descripcion) ||
+                string.IsNullOrEmpty(entidad.Imagen);
         }
     }
 }

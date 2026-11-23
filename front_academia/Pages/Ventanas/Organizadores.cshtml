@@ -43,10 +43,13 @@
                 <h3>Organizadores</h3>
 
                 <label>
-                    Persona (id)
+                    Persona
                 </label>
-                <input id="nmPersona"
-                       asp-for="@Model.Actual!.Persona" />
+                <select id="nmPersona"
+                        asp-for="@Model.Actual!.Persona"
+                        asp-items="Model.ListaPersona">
+                    <option value="">-- Seleccione --</option>
+                </select>
                 <br />
 
                 <label>
@@ -54,6 +57,21 @@
                 </label>
                 <input id="nmActivo"
                        asp-for="@Model.Actual!.Activo" />
+                <br />
+
+                <label>
+                    Imagen (máx. 500 KB)
+                </label>
+                @if (!string.IsNullOrEmpty(Model.Actual!.Imagen))
+                {
+                    <br />
+                    <img src="data:image/png;base64,@Model.Actual!.Imagen" style="max-height:120px;max-width:200px;" />
+                }
+                <br />
+                <input id="flImagen"
+                       type="file"
+                       accept="image/*"
+                       asp-for="FormFile" />
                 <br />
 
             </div>
@@ -89,6 +107,7 @@
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
                         <th>Id</th>
+                        <th>Imagen</th>
                         <th>Persona</th>
                         <th>Activo</th>
                         <th>Acción</th>
@@ -99,6 +118,12 @@
                         {
                             <tr>
                                 <td>@elemento.Id</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(elemento.Imagen))
+                                    {
+                                        <img src="data:image/png;base64,@elemento.Imagen" style="max-height:48px;max-width:80px;" />
+                                    }
+                                </td>
                                 <td>@elemento._persona?.Nombre</td>
                                 <td>@elemento.Activo</td>
                                 <td>

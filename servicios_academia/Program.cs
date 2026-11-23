@@ -3,6 +3,7 @@ using libreria_academia.interfaces;
 using libreria_academia.nucleo;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using servicios_academia.Servicios;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -42,6 +43,9 @@ builder.Services.AddScoped<IEventos_OrganizadoresAplicacion, Eventos_Organizador
 builder.Services.AddScoped<IRolesAplicacion, RolesAplicacion>();
 builder.Services.AddScoped<IUsuariosAplicacion, UsuariosAplicacion>();
 builder.Services.AddScoped<ILoginsAplicacion, LoginsAplicacion>();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IUsuarioActual, UsuarioActual>();
+builder.Services.AddScoped<IAuditoriasAplicacion, AuditoriasAplicacion>();
 
 var app = builder.Build();
 

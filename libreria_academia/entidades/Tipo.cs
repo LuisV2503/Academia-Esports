@@ -7,6 +7,7 @@ namespace libreria_academia.entidades
         public int? Id { get; set; }
         public string? Nombre { get; set; }
         public string? Descripccion { get; set; }
+        public string? Imagen { get; set; }
 
         public List<Empresas> Empresas { get; set; } = new List<Empresas>();
     }

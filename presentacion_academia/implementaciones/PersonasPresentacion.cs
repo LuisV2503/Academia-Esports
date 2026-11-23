@@ -1,4 +1,4 @@
-﻿using libreria_academia.entidades;
+using libreria_academia.entidades;
 using presentacion_academia.interfaces;
 
 namespace aplicacion_academia.interfaces
@@ -75,6 +75,9 @@ namespace aplicacion_academia.interfaces
             if (Validar(entidad))
                 throw new Exception("Falta informacion");
 
+            if (string.IsNullOrEmpty(entidad.Imagen))
+                throw new Exception("Imagen requerida");
+
             if (!this.ISueldosPresentacion.Consultar().Any(x => x.Id == entidad.Sueldo))
                 throw new Exception("Sueldo invalido");
 
@@ -91,9 +94,7 @@ namespace aplicacion_academia.interfaces
             return
                 string.IsNullOrEmpty(entidad.Nombre) ||
                 string.IsNullOrEmpty(entidad.Nacionalidad) ||
-                entidad.FechaNacimiento == null ||
-                entidad.Sueldo == null;
-
+                entidad.Sueldo == null || entidad.Sueldo == 0;
         }
     }
 }

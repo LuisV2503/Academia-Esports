@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model front_academia.Pages.Ventanas.PersonasModel
 @{
     ViewData["Title"] = "Personas";
@@ -27,8 +27,7 @@
 
         @if (ViewData.ContainsKey("Mensaje"))
         {
-            @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
-            ;
+            @await Html.PartialAsync("../Emergentes/Mensajes.cshtml");
         }
 
         @if (Model.Formulario || Model.Borrar)
@@ -41,7 +40,7 @@
         @if (Model.Formulario)
         {
             <div>
-                <h3>Persona</h3>
+                <h3>Personas</h3>
 
                 <label>
                     Nombre
@@ -65,11 +64,30 @@
                 <br />
 
                 <label>
-                    Sueldo (id)
+                    Sueldo
                 </label>
-                <input id="nmSueldo"
-                       asp-for="@Model.Actual!.Sueldo" />
+                <select id="nmSueldo"
+                        asp-for="@Model.Actual!.Sueldo"
+                        asp-items="Model.ListaSueldo">
+                    <option value="">-- Seleccione --</option>
+                </select>
                 <br />
+
+                <label>
+                    Imagen (máx. 500 KB)
+                </label>
+                @if (!string.IsNullOrEmpty(Model.Actual!.Imagen))
+                {
+                    <br />
+                    <img src="data:image/png;base64,@Model.Actual!.Imagen" style="max-height:120px;max-width:200px;" />
+                }
+                <br />
+                <input id="flImagen"
+                       type="file"
+                       accept="image/*"
+                       asp-for="FormFile" />
+                <br />
+
             </div>
         }
 
@@ -83,8 +101,7 @@
                         ¿Desea borrar la entidad...?
                     </h4>
                     <h6>
-                        @Model.Actual!.Nombre,
-                        @Model.Actual!.Nacionalidad
+                        @Model.Actual!.Nombre
                     </h6>
                     <input type="submit"
                            value="Cancelar"
@@ -104,10 +121,11 @@
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
                         <th>Id</th>
+                        <th>Imagen</th>
                         <th>Nombre</th>
                         <th>Nacionalidad</th>
-                        <th>Fecha de Nacimiento</th>
-                        <th>Valor Sueldo</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Sueldo</th>
                         <th>Acción</th>
                     </tr>
                     @if (Model != null && Model.Lista != null)
@@ -116,6 +134,12 @@
                         {
                             <tr>
                                 <td>@elemento.Id</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(elemento.Imagen))
+                                    {
+                                        <img src="data:image/png;base64,@elemento.Imagen" style="max-height:48px;max-width:80px;" />
+                                    }
+                                </td>
                                 <td>@elemento.Nombre</td>
                                 <td>@elemento.Nacionalidad</td>
                                 <td>@elemento.FechaNacimiento?.ToString("dd/MM/yyyy")</td>

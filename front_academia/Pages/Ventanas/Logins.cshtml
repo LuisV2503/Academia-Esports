@@ -43,10 +43,13 @@
                 <h3>Logins</h3>
 
                 <label>
-                    Usuario (id)
+                    Usuario
                 </label>
-                <input id="nmUsuario"
-                       asp-for="@Model.Actual!.Usuario" />
+                <select id="nmUsuario"
+                        asp-for="@Model.Actual!.Usuario"
+                        asp-items="Model.ListaUsuario">
+                    <option value="">-- Seleccione --</option>
+                </select>
                 <br />
 
                 <label>
@@ -62,6 +65,21 @@
                 </label>
                 <input id="nmActivo"
                        asp-for="@Model.Actual!.Activo" />
+                <br />
+
+                <label>
+                    Imagen (máx. 500 KB)
+                </label>
+                @if (!string.IsNullOrEmpty(Model.Actual!.Imagen))
+                {
+                    <br />
+                    <img src="data:image/png;base64,@Model.Actual!.Imagen" style="max-height:120px;max-width:200px;" />
+                }
+                <br />
+                <input id="flImagen"
+                       type="file"
+                       accept="image/*"
+                       asp-for="FormFile" />
                 <br />
 
             </div>
@@ -97,6 +115,7 @@
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
                         <th>Id</th>
+                        <th>Imagen</th>
                         <th>Usuario</th>
                         <th>Activo</th>
                         <th>Acción</th>
@@ -107,6 +126,12 @@
                         {
                             <tr>
                                 <td>@elemento.Id</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(elemento.Imagen))
+                                    {
+                                        <img src="data:image/png;base64,@elemento.Imagen" style="max-height:48px;max-width:80px;" />
+                                    }
+                                </td>
                                 <td>@elemento._usuario?.Correo</td>
                                 <td>@elemento.Activo</td>
                                 <td>

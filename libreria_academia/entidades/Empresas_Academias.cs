@@ -7,5 +7,6 @@ namespace libreria_academia.entidades
         public Empresas? _empresas { get; set; }
         public int? Academia { get; set; }
         public Academias? _academias { get; set; }
+        public string? Imagen { get; set; }
     }
 }

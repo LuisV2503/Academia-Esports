@@ -9,6 +9,7 @@ namespace libreria_academia.entidades
         public bool? Activo { get; set; }
         public int? Persona { get; set; }
         public Personas? _persona { get; set; }
+        public string? Imagen { get; set; }
 
         public List<Eventos_Organizadores> EventosOrganizadores { get; set; } = new List<Eventos_Organizadores>();
     }

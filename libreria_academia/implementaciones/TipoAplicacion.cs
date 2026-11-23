@@ -8,10 +8,12 @@ namespace libreria_academia.implementaciones
     public class TipoAplicacion : ITipoAplicacion
     {
         private IConexion conexion;
+        private IAuditoriasAplicacion auditoria;
 
-        public TipoAplicacion(IConexion conexion)
+        public TipoAplicacion(IConexion conexion, IAuditoriasAplicacion auditoria)
         {
             this.conexion = conexion;
+            this.auditoria = auditoria;
         }
 
         public Tipo Actualizar(Tipo entidad)
@@ -19,12 +21,23 @@ namespace libreria_academia.implementaciones
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
 
+            // Si no se elige una imagen nueva, se conserva la que ya tiene
+            if (string.IsNullOrEmpty(entidad.Imagen))
+            {
+                entidad.Imagen = this.conexion.Tipo!
+                    .Where(x => x.Id == entidad.Id)
+                    .Select(x => x.Imagen)
+                    .FirstOrDefault();
+            }
+
             if (Validar(entidad))
                 throw new Exception("Faltan valores");
 
             var entry = this.conexion!.Entry<Tipo>(entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
+
+            this.auditoria.Registrar($"actualizó el tipo {entidad.Nombre} (Id {entidad.Id})");
             return entidad;
         }
 
@@ -36,8 +49,14 @@ namespace libreria_academia.implementaciones
             if (this.conexion.Empresas!.Any(x => x.Tipo == entidad.Id))
                 throw new Exception("Tipo en uso");
 
+            // Se lee el registro antes de borrarlo para poder nombrarlo en la auditoría
+            var anterior = this.conexion.Tipo!
+                .FirstOrDefault(x => x.Id == entidad.Id) ?? entidad;
+
             this.conexion.Tipo!.Remove(entidad!);
             this.conexion.SaveChanges();
+
+            this.auditoria.Registrar($"borró el tipo {anterior.Nombre} (Id {anterior.Id})");
             return entidad;
         }
 
@@ -67,6 +86,7 @@ namespace libreria_academia.implementaciones
             this.conexion.Tipo!.Add(entidad!);
             this.conexion.SaveChanges();
 
+            this.auditoria.Registrar($"insertó el tipo {entidad.Nombre} (Id {entidad.Id})");
             return entidad;
         }
 
@@ -74,7 +94,8 @@ namespace libreria_academia.implementaciones
         {
             return
                 string.IsNullOrEmpty(entidad.Nombre) ||
-                string.IsNullOrEmpty(entidad.Descripccion);
+                string.IsNullOrEmpty(entidad.Descripccion) ||
+                string.IsNullOrEmpty(entidad.Imagen);
         }
     }
 }

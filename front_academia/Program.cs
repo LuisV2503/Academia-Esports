@@ -40,6 +40,8 @@ builder.Services.AddScoped<IEventos_OrganizadoresPresentacion, Eventos_Organizad
 builder.Services.AddScoped<IRolesPresentacion, RolesPresentacion>();
 builder.Services.AddScoped<IUsuariosPresentacion, UsuariosPresentacion>();
 builder.Services.AddScoped<ILoginsPresentacion, LoginsPresentacion>();
+builder.Services.AddScoped<IContextoUsuario, ContextoUsuario>();
+builder.Services.AddScoped<IAuditoriasPresentacion, AuditoriasPresentacion>();
 
 var app = builder.Build();
 

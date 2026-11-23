@@ -43,17 +43,23 @@
                 <h3>Psicologos</h3>
 
                 <label>
-                    Persona (id)
+                    Persona
                 </label>
-                <input id="nmPersona"
-                       asp-for="@Model.Actual!.Persona" />
+                <select id="nmPersona"
+                        asp-for="@Model.Actual!.Persona"
+                        asp-items="Model.ListaPersona">
+                    <option value="">-- Seleccione --</option>
+                </select>
                 <br />
 
                 <label>
-                    Equipo (id)
+                    Equipo
                 </label>
-                <input id="nmEquipo"
-                       asp-for="@Model.Actual!.Equipo" />
+                <select id="nmEquipo"
+                        asp-for="@Model.Actual!.Equipo"
+                        asp-items="Model.ListaEquipo">
+                    <option value="">-- Seleccione --</option>
+                </select>
                 <br />
 
                 <label>
@@ -61,6 +67,21 @@
                 </label>
                 <input id="nmActivo"
                        asp-for="@Model.Actual!.Activo" />
+                <br />
+
+                <label>
+                    Imagen (máx. 500 KB)
+                </label>
+                @if (!string.IsNullOrEmpty(Model.Actual!.Imagen))
+                {
+                    <br />
+                    <img src="data:image/png;base64,@Model.Actual!.Imagen" style="max-height:120px;max-width:200px;" />
+                }
+                <br />
+                <input id="flImagen"
+                       type="file"
+                       accept="image/*"
+                       asp-for="FormFile" />
                 <br />
 
             </div>
@@ -76,7 +97,8 @@
                         ¿Desea borrar la entidad...?
                     </h4>
                     <h6>
-                        @Model.Actual!._persona?.Nombre
+                        @Model.Actual!._persona?.Nombre,
+                        @Model.Actual!._equipo?.Nombre
                     </h6>
                     <input type="submit"
                            value="Cancelar"
@@ -96,6 +118,7 @@
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
                         <th>Id</th>
+                        <th>Imagen</th>
                         <th>Persona</th>
                         <th>Equipo</th>
                         <th>Activo</th>
@@ -107,6 +130,12 @@
                         {
                             <tr>
                                 <td>@elemento.Id</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(elemento.Imagen))
+                                    {
+                                        <img src="data:image/png;base64,@elemento.Imagen" style="max-height:48px;max-width:80px;" />
+                                    }
+                                </td>
                                 <td>@elemento._persona?.Nombre</td>
                                 <td>@elemento._equipo?.Nombre</td>
                                 <td>@elemento.Activo</td>

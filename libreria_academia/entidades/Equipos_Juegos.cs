@@ -7,5 +7,6 @@ namespace libreria_academia.entidades
         public Equipos? _equipos { get; set; }
         public int? Juego { get; set; }
         public Juegos? _juegos { get; set; }
+        public string? Imagen { get; set; }
     }
 }

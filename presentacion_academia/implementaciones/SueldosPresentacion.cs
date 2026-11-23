@@ -1,4 +1,4 @@
-﻿using libreria_academia.entidades;
+using libreria_academia.entidades;
 using presentacion_academia.interfaces;
 
 namespace aplicacion_academia.interfaces
@@ -32,15 +32,6 @@ namespace aplicacion_academia.interfaces
         {
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se ha guardado");
-
-            var personas = this.IComunicaciones.Ejecutar<List<Personas>>(
-                "Personas/Consultar",
-                null,
-                HttpMethod.Get);
-            personas.Wait();
-
-            if (personas.Result.Any(x => x.Sueldo == entidad.Id))
-                throw new Exception("Sueldo en uso");
 
             var task = this.IComunicaciones.Ejecutar<Sueldos>(
                 "Sueldos/Borrar",
@@ -78,6 +69,9 @@ namespace aplicacion_academia.interfaces
             if (Validar(entidad))
                 throw new Exception("Falta informacion");
 
+            if (string.IsNullOrEmpty(entidad.Imagen))
+                throw new Exception("Imagen requerida");
+
             var task = this.IComunicaciones.Ejecutar<Sueldos>(
                 "Sueldos/Insertar",
                 entidad,
@@ -89,7 +83,7 @@ namespace aplicacion_academia.interfaces
         private bool Validar(Sueldos entidad)
         {
             return
-                entidad.Valor == null;
+                entidad.Valor == null || entidad.Valor == 0;
         }
     }
 }

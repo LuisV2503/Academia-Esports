@@ -3,6 +3,118 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Academia\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|c:\\users\\administrator\\desktop\\academia\\presentacion_academia\\implementaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5940424-7F98-4702-ADA4-074C3135BA40}|presentacion_academia\\presentacion_academia.csproj|solutionrelative:presentacion_academia\\implementaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\implementaciones\\auditoriasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\implementaciones\\auditoriasaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\tipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\tipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\sueldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\sueldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\psicologos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\psicologos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\personas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\personas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\organizadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\organizadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\logins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\logins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\jugadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\jugadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\juegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\juegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\fisioterapeutas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\fisioterapeutas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\eventos_organizadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\eventos_organizadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\equipos_juegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\equipos_juegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\equipos_empresas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\equipos_empresas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\equipos_academias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\equipos_academias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\equipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\equipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\entretenimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\entretenimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\entrenadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\entrenadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\empresas_academias_eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\empresas_academias_eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\empresas_academias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\empresas_academias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\empresas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\empresas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\auditorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\auditorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\analistas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\analistas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\academias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\academias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|c:\\users\\administrator\\desktop\\academia\\servicios_academia\\servicios\\usuarioactual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37033B04-13FE-456A-9666-4F1E04AA1105}|servicios_academia\\servicios_academia.csproj|solutionrelative:servicios_academia\\servicios\\usuarioactual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
       "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
@@ -13,10 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|c:\\users\\administrator\\desktop\\academia\\front_academia\\pages\\ventanas\\logins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\pages\\ventanas\\logins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
@@ -30,11 +138,375 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Comunicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\Comunicaciones.cs",
+              "RelativeDocumentMoniker": "presentacion_academia\\implementaciones\\Comunicaciones.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\implementaciones\\Comunicaciones.cs",
+              "RelativeToolTip": "presentacion_academia\\implementaciones\\Comunicaciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T20:43:31.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AuditoriasAplicacion.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\AuditoriasAplicacion.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\implementaciones\\AuditoriasAplicacion.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\implementaciones\\AuditoriasAplicacion.cs",
+              "RelativeToolTip": "libreria_academia\\implementaciones\\AuditoriasAplicacion.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwBIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T20:32:57.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tipo.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Tipo.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Tipo.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Tipo.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Tipo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:57:09.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sueldos.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Sueldos.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Sueldos.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Sueldos.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Sueldos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:57:04.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Roles.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Roles.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Roles.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:56:32.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Psicologos.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Psicologos.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Psicologos.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Psicologos.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Psicologos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:56:28.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Personas.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Personas.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Personas.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Personas.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Personas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:56:24.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Organizadores.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Organizadores.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Organizadores.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Organizadores.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Organizadores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:56:20.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Logins.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Logins.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Logins.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Logins.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Logins.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:57.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Usuarios.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Usuarios.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Usuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-22T23:03:51.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Jugadores.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Jugadores.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Jugadores.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Jugadores.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Jugadores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:50.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Juegos.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Juegos.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Juegos.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Juegos.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Juegos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:45.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Fisioterapeutas.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Fisioterapeutas.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Fisioterapeutas.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Fisioterapeutas.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Fisioterapeutas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:41.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Eventos_Organizadores.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Eventos_Organizadores.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Eventos_Organizadores.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Eventos_Organizadores.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Eventos_Organizadores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:37.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Eventos.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Eventos.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Eventos.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Eventos.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Eventos.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:32.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Equipos_Juegos.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos_Juegos.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Equipos_Juegos.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos_Juegos.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Equipos_Juegos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:28.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Equipos_Empresas.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos_Empresas.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Equipos_Empresas.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos_Empresas.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Equipos_Empresas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:24.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Equipos_Academias.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos_Academias.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Equipos_Academias.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos_Academias.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Equipos_Academias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:19.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Equipos.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Equipos.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Equipos.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Equipos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:15.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Entretenimientos.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Entretenimientos.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Entretenimientos.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Entretenimientos.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Entretenimientos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:12.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Entrenadores.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Entrenadores.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Entrenadores.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Entrenadores.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Entrenadores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:07.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Empresas_Academias_Eventos.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Empresas_Academias_Eventos.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Empresas_Academias_Eventos.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Empresas_Academias_Eventos.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Empresas_Academias_Eventos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:55:03.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Empresas_Academias.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Empresas_Academias.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Empresas_Academias.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Empresas_Academias.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Empresas_Academias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:54:45.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Empresas.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Empresas.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Empresas.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Empresas.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Empresas.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:54:39.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Auditorias.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Auditorias.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Auditorias.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Auditorias.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Auditorias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:54:09.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Analistas.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Analistas.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Analistas.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Analistas.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Analistas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:54:04.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Academias.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Academias.cs",
+              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Academias.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Academias.cs",
+              "RelativeToolTip": "libreria_academia\\entidades\\Academias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:53:48.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UsuarioActual.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Servicios\\UsuarioActual.cs",
+              "RelativeDocumentMoniker": "servicios_academia\\Servicios\\UsuarioActual.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\servicios_academia\\Servicios\\UsuarioActual.cs",
+              "RelativeToolTip": "servicios_academia\\Servicios\\UsuarioActual.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T18:49:13.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "FiltroSesion.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Filtros\\FiltroSesion.cs",
               "RelativeDocumentMoniker": "front_academia\\Filtros\\FiltroSesion.cs",
@@ -47,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 28,
               "Title": "query.sql ",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\query.sql",
               "RelativeDocumentMoniker": "libreria_academia\\query.sql",
@@ -59,26 +531,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Usuarios.cs",
-              "RelativeDocumentMoniker": "libreria_academia\\entidades\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\entidades\\Usuarios.cs",
-              "RelativeToolTip": "libreria_academia\\entidades\\Usuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T23:03:51.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 30,
               "Title": "Logins.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
               "RelativeDocumentMoniker": "front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
               "RelativeToolTip": "front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswAsAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswA0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-22T23:01:51.58Z",
               "EditorCaption": ""

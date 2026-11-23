@@ -13,6 +13,7 @@ namespace libreria_academia.entidades
         public string? Correo { get; set; }
         public int? Tipo { get; set; }
         public Tipo? _tipo { get; set; }
+        public string? Imagen { get; set; }
 
         public List<Equipos_Empresas> EquiposEmpresas { get; set; } = new List<Equipos_Empresas>();
         public List<Empresas_Academias> EmpresasAcademias { get; set; } = new List<Empresas_Academias>();

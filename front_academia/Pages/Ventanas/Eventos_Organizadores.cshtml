@@ -43,17 +43,38 @@
                 <h3>Eventos_Organizadores</h3>
 
                 <label>
-                    Evento (id)
+                    Evento
                 </label>
-                <input id="nmEvento"
-                       asp-for="@Model.Actual!.Evento" />
+                <select id="nmEvento"
+                        asp-for="@Model.Actual!.Evento"
+                        asp-items="Model.ListaEvento">
+                    <option value="">-- Seleccione --</option>
+                </select>
                 <br />
 
                 <label>
-                    Organizador (id)
+                    Organizador
                 </label>
-                <input id="nmOrganizador"
-                       asp-for="@Model.Actual!.Organizador" />
+                <select id="nmOrganizador"
+                        asp-for="@Model.Actual!.Organizador"
+                        asp-items="Model.ListaOrganizador">
+                    <option value="">-- Seleccione --</option>
+                </select>
+                <br />
+
+                <label>
+                    Imagen (máx. 500 KB)
+                </label>
+                @if (!string.IsNullOrEmpty(Model.Actual!.Imagen))
+                {
+                    <br />
+                    <img src="data:image/png;base64,@Model.Actual!.Imagen" style="max-height:120px;max-width:200px;" />
+                }
+                <br />
+                <input id="flImagen"
+                       type="file"
+                       accept="image/*"
+                       asp-for="FormFile" />
                 <br />
 
             </div>
@@ -90,6 +111,7 @@
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
                         <th>Id</th>
+                        <th>Imagen</th>
                         <th>Evento</th>
                         <th>Organizador</th>
                         <th>Acción</th>
@@ -100,6 +122,12 @@
                         {
                             <tr>
                                 <td>@elemento.Id</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(elemento.Imagen))
+                                    {
+                                        <img src="data:image/png;base64,@elemento.Imagen" style="max-height:48px;max-width:80px;" />
+                                    }
+                                </td>
                                 <td>@elemento._eventos?.Nombre</td>
                                 <td>@elemento._organizadores?._persona?.Nombre</td>
                                 <td>

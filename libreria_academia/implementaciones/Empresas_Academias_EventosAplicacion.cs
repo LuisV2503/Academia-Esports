@@ -8,16 +8,27 @@ namespace libreria_academia.implementaciones
     public class Empresas_Academias_EventosAplicacion : IEmpresas_Academias_EventosAplicacion
     {
         private IConexion conexion;
+        private IAuditoriasAplicacion auditoria;
 
-        public Empresas_Academias_EventosAplicacion(IConexion conexion)
+        public Empresas_Academias_EventosAplicacion(IConexion conexion, IAuditoriasAplicacion auditoria)
         {
             this.conexion = conexion;
+            this.auditoria = auditoria;
         }
 
         public Empresas_Academias_Eventos Actualizar(Empresas_Academias_Eventos entidad)
         {
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
+
+            // Si no se elige una imagen nueva, se conserva la que ya tiene
+            if (string.IsNullOrEmpty(entidad.Imagen))
+            {
+                entidad.Imagen = this.conexion.Empresas_Academias_Eventos!
+                    .Where(x => x.Id == entidad.Id)
+                    .Select(x => x.Imagen)
+                    .FirstOrDefault();
+            }
 
             if (Validar(entidad))
                 throw new Exception("Faltan valores");
@@ -40,6 +51,8 @@ namespace libreria_academia.implementaciones
             var entry = this.conexion!.Entry<Empresas_Academias_Eventos>(entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
+
+            this.auditoria.Registrar($"actualizó la relación empresa-academia-evento Id {entidad.Id} (Empresa {entidad.Empresa}, Academia {entidad.Academia}, Evento {entidad.Evento})");
             return entidad;
         }
 
@@ -48,8 +61,14 @@ namespace libreria_academia.implementaciones
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
 
+            // Se lee el registro antes de borrarlo para poder nombrarlo en la auditoría
+            var anterior = this.conexion.Empresas_Academias_Eventos!
+                .FirstOrDefault(x => x.Id == entidad.Id) ?? entidad;
+
             this.conexion.Empresas_Academias_Eventos!.Remove(entidad!);
             this.conexion.SaveChanges();
+
+            this.auditoria.Registrar($"borró la relación empresa-academia-evento Id {anterior.Id} (Empresa {anterior.Empresa}, Academia {anterior.Academia}, Evento {anterior.Evento})");
             return entidad;
         }
 
@@ -100,6 +119,7 @@ namespace libreria_academia.implementaciones
             this.conexion.Empresas_Academias_Eventos!.Add(entidad!);
             this.conexion.SaveChanges();
 
+            this.auditoria.Registrar($"insertó la relación empresa-academia-evento Id {entidad.Id} (Empresa {entidad.Empresa}, Academia {entidad.Academia}, Evento {entidad.Evento})");
             return entidad;
         }
 
@@ -108,7 +128,8 @@ namespace libreria_academia.implementaciones
             return
                 entidad.Empresa == null || entidad.Empresa == 0 ||
                 entidad.Academia == null || entidad.Academia == 0 ||
-                entidad.Evento == null || entidad.Evento == 0;
+                entidad.Evento == null || entidad.Evento == 0 ||
+                string.IsNullOrEmpty(entidad.Imagen);
         }
     }
 }

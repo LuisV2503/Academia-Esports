@@ -43,17 +43,38 @@
                 <h3>Equipos_Academias</h3>
 
                 <label>
-                    Equipo (id)
+                    Equipo
                 </label>
-                <input id="nmEquipo"
-                       asp-for="@Model.Actual!.Equipo" />
+                <select id="nmEquipo"
+                        asp-for="@Model.Actual!.Equipo"
+                        asp-items="Model.ListaEquipo">
+                    <option value="">-- Seleccione --</option>
+                </select>
                 <br />
 
                 <label>
-                    Academia (id)
+                    Academia
                 </label>
-                <input id="nmAcademia"
-                       asp-for="@Model.Actual!.Academia" />
+                <select id="nmAcademia"
+                        asp-for="@Model.Actual!.Academia"
+                        asp-items="Model.ListaAcademia">
+                    <option value="">-- Seleccione --</option>
+                </select>
+                <br />
+
+                <label>
+                    Imagen (máx. 500 KB)
+                </label>
+                @if (!string.IsNullOrEmpty(Model.Actual!.Imagen))
+                {
+                    <br />
+                    <img src="data:image/png;base64,@Model.Actual!.Imagen" style="max-height:120px;max-width:200px;" />
+                }
+                <br />
+                <input id="flImagen"
+                       type="file"
+                       accept="image/*"
+                       asp-for="FormFile" />
                 <br />
 
             </div>
@@ -90,6 +111,7 @@
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
                         <th>Id</th>
+                        <th>Imagen</th>
                         <th>Equipo</th>
                         <th>Academia</th>
                         <th>Acción</th>
@@ -100,6 +122,12 @@
                         {
                             <tr>
                                 <td>@elemento.Id</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(elemento.Imagen))
+                                    {
+                                        <img src="data:image/png;base64,@elemento.Imagen" style="max-height:48px;max-width:80px;" />
+                                    }
+                                </td>
                                 <td>@elemento._equipos?.Nombre</td>
                                 <td>@elemento._academias?.Nombre</td>
                                 <td>

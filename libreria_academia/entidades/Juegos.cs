@@ -9,6 +9,7 @@ namespace libreria_academia.entidades
         public string? Genero { get; set; }
         public int? CantJug { get; set; }
         public bool? Pago { get; set; }
+        public string? Imagen { get; set; }
 
         public List<Equipos_Juegos> EquiposJuegos { get; set; } = new List<Equipos_Juegos>();
     }

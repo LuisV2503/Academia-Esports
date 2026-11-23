@@ -8,16 +8,27 @@ namespace libreria_academia.implementaciones
     public class Eventos_OrganizadoresAplicacion : IEventos_OrganizadoresAplicacion
     {
         private IConexion conexion;
+        private IAuditoriasAplicacion auditoria;
 
-        public Eventos_OrganizadoresAplicacion(IConexion conexion)
+        public Eventos_OrganizadoresAplicacion(IConexion conexion, IAuditoriasAplicacion auditoria)
         {
             this.conexion = conexion;
+            this.auditoria = auditoria;
         }
 
         public Eventos_Organizadores Actualizar(Eventos_Organizadores entidad)
         {
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
+
+            // Si no se elige una imagen nueva, se conserva la que ya tiene
+            if (string.IsNullOrEmpty(entidad.Imagen))
+            {
+                entidad.Imagen = this.conexion.Eventos_Organizadores!
+                    .Where(x => x.Id == entidad.Id)
+                    .Select(x => x.Imagen)
+                    .FirstOrDefault();
+            }
 
             if (Validar(entidad))
                 throw new Exception("Faltan valores");
@@ -36,6 +47,8 @@ namespace libreria_academia.implementaciones
             var entry = this.conexion!.Entry<Eventos_Organizadores>(entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
+
+            this.auditoria.Registrar($"actualizó la relación evento-organizador Id {entidad.Id} (Evento {entidad.Evento}, Organizador {entidad.Organizador})");
             return entidad;
         }
 
@@ -44,8 +57,14 @@ namespace libreria_academia.implementaciones
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
 
+            // Se lee el registro antes de borrarlo para poder nombrarlo en la auditoría
+            var anterior = this.conexion.Eventos_Organizadores!
+                .FirstOrDefault(x => x.Id == entidad.Id) ?? entidad;
+
             this.conexion.Eventos_Organizadores!.Remove(entidad!);
             this.conexion.SaveChanges();
+
+            this.auditoria.Registrar($"borró la relación evento-organizador Id {anterior.Id} (Evento {anterior.Evento}, Organizador {anterior.Organizador})");
             return entidad;
         }
 
@@ -92,6 +111,7 @@ namespace libreria_academia.implementaciones
             this.conexion.Eventos_Organizadores!.Add(entidad!);
             this.conexion.SaveChanges();
 
+            this.auditoria.Registrar($"insertó la relación evento-organizador Id {entidad.Id} (Evento {entidad.Evento}, Organizador {entidad.Organizador})");
             return entidad;
         }
 
@@ -99,7 +119,8 @@ namespace libreria_academia.implementaciones
         {
             return
                 entidad.Evento == null || entidad.Evento == 0 ||
-                entidad.Organizador == null || entidad.Organizador == 0;
+                entidad.Organizador == null || entidad.Organizador == 0 ||
+                string.IsNullOrEmpty(entidad.Imagen);
         }
     }
 }

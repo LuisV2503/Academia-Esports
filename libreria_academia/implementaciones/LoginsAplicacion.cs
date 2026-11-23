@@ -9,10 +9,12 @@ namespace libreria_academia.implementaciones
     public class LoginsAplicacion : ILoginsAplicacion
     {
         private IConexion conexion;
+        private IAuditoriasAplicacion auditoria;
 
-        public LoginsAplicacion(IConexion conexion)
+        public LoginsAplicacion(IConexion conexion, IAuditoriasAplicacion auditoria)
         {
             this.conexion = conexion;
+            this.auditoria = auditoria;
         }
 
         public Logins Actualizar(Logins entidad)
@@ -20,7 +22,17 @@ namespace libreria_academia.implementaciones
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
 
-            if (entidad.Usuario == null || entidad.Usuario == 0)
+            // Si no se elige una imagen nueva, se conserva la que ya tiene
+            if (string.IsNullOrEmpty(entidad.Imagen))
+            {
+                entidad.Imagen = this.conexion.Logins!
+                    .Where(x => x.Id == entidad.Id)
+                    .Select(x => x.Imagen)
+                    .FirstOrDefault();
+            }
+
+            if (entidad.Usuario == null || entidad.Usuario == 0 ||
+                string.IsNullOrEmpty(entidad.Imagen))
                 throw new Exception("Faltan valores");
 
             if (!this.conexion.Usuarios!.Any(x => x.Id == entidad.Usuario))
@@ -47,6 +59,8 @@ namespace libreria_academia.implementaciones
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
 
+            this.auditoria.Registrar($"actualizó el login del usuario {entidad.Usuario} (Id {entidad.Id})");
+
             entidad.Contrasena = null;
             return entidad;
         }
@@ -56,8 +70,14 @@ namespace libreria_academia.implementaciones
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
 
+            // Se lee el registro antes de borrarlo para poder nombrarlo en la auditoría
+            var anterior = this.conexion.Logins!
+                .FirstOrDefault(x => x.Id == entidad.Id) ?? entidad;
+
             this.conexion.Logins!.Remove(entidad!);
             this.conexion.SaveChanges();
+
+            this.auditoria.Registrar($"borró el login del usuario {anterior.Usuario} (Id {anterior.Id})");
 
             entidad.Contrasena = null;
             return entidad;
@@ -95,7 +115,8 @@ namespace libreria_academia.implementaciones
                 throw new Exception("Ya se guardo");
 
             if (entidad.Usuario == null || entidad.Usuario == 0 ||
-                string.IsNullOrEmpty(entidad.Contrasena))
+                string.IsNullOrEmpty(entidad.Contrasena) ||
+                string.IsNullOrEmpty(entidad.Imagen))
                 throw new Exception("Faltan valores");
 
             if (!this.conexion.Usuarios!.Any(x => x.Id == entidad.Usuario))
@@ -111,6 +132,8 @@ namespace libreria_academia.implementaciones
 
             this.conexion.Logins!.Add(entidad!);
             this.conexion.SaveChanges();
+
+            this.auditoria.Registrar($"insertó el login del usuario {entidad.Usuario} (Id {entidad.Id})");
 
             entidad.Contrasena = null;
             return entidad;
@@ -139,6 +162,7 @@ namespace libreria_academia.implementaciones
             if (usuario.Activo != true || login.Activo != true)
                 throw new Exception("Cuenta desactivada");
 
+            this.auditoria.Registrar("inició sesión", usuario.Id);
             return usuario;
         }
 

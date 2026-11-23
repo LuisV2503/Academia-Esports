@@ -8,16 +8,27 @@ namespace libreria_academia.implementaciones
     public class EventosAplicacion : IEventosAplicacion
     {
         private IConexion conexion;
+        private IAuditoriasAplicacion auditoria;
 
-        public EventosAplicacion(IConexion conexion)
+        public EventosAplicacion(IConexion conexion, IAuditoriasAplicacion auditoria)
         {
             this.conexion = conexion;
+            this.auditoria = auditoria;
         }
 
         public Eventos Actualizar(Eventos entidad)
         {
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
+
+            // Si no se elige una imagen nueva, se conserva la que ya tiene
+            if (string.IsNullOrEmpty(entidad.Imagen))
+            {
+                entidad.Imagen = this.conexion.Eventos!
+                    .Where(x => x.Id == entidad.Id)
+                    .Select(x => x.Imagen)
+                    .FirstOrDefault();
+            }
 
             if (Validar(entidad))
                 throw new Exception("Faltan valores");
@@ -31,6 +42,8 @@ namespace libreria_academia.implementaciones
             var entry = this.conexion!.Entry<Eventos>(entidad);
             entry.State = EntityState.Modified;
             this.conexion!.SaveChanges();
+
+            this.auditoria.Registrar($"actualizó el evento {entidad.Nombre} (Id {entidad.Id})");
             return entidad;
         }
 
@@ -44,8 +57,14 @@ namespace libreria_academia.implementaciones
                 this.conexion.Entretenimientos!.Any(x => x.Evento == entidad.Id))
                 throw new Exception("Evento en uso");
 
+            // Se lee el registro antes de borrarlo para poder nombrarlo en la auditoría
+            var anterior = this.conexion.Eventos!
+                .FirstOrDefault(x => x.Id == entidad.Id) ?? entidad;
+
             this.conexion.Eventos!.Remove(entidad!);
             this.conexion.SaveChanges();
+
+            this.auditoria.Registrar($"borró el evento {anterior.Nombre} (Id {anterior.Id})");
             return entidad;
         }
 
@@ -81,6 +100,7 @@ namespace libreria_academia.implementaciones
             this.conexion.Eventos!.Add(entidad!);
             this.conexion.SaveChanges();
 
+            this.auditoria.Registrar($"insertó el evento {entidad.Nombre} (Id {entidad.Id})");
             return entidad;
         }
 
@@ -93,7 +113,8 @@ namespace libreria_academia.implementaciones
                 entidad.FechaFin == null ||
                 string.IsNullOrEmpty(entidad.Modalidad) ||
                 string.IsNullOrEmpty(entidad.Ciudad) ||
-                string.IsNullOrEmpty(entidad.Direccion);
+                string.IsNullOrEmpty(entidad.Direccion) ||
+                string.IsNullOrEmpty(entidad.Imagen);
         }
     }
 }

@@ -173,6 +173,12 @@ namespace libreria_academia.implementaciones
                 .HasOne(l => l._usuario)
                 .WithOne()
                 .HasForeignKey<Logins>(l => l.Usuario);
+
+            // Auditorias <-> Usuarios (muchos a 1, opcional)
+            modelBuilder.Entity<Auditorias>()
+                .HasOne(a => a._usuario)
+                .WithMany()
+                .HasForeignKey(a => a.Usuario);
         }
 
         public DbSet<entidades.Sueldos>? Sueldos { get; set; }
@@ -199,5 +205,6 @@ namespace libreria_academia.implementaciones
         public DbSet<Roles>? Roles { get; set; }
         public DbSet<Usuarios>? Usuarios { get; set; }
         public DbSet<Logins>? Logins { get; set; }
+        public DbSet<Auditorias>? Auditorias { get; set; }
     }
 }

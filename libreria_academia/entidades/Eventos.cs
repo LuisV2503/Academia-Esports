@@ -14,6 +14,7 @@ namespace libreria_academia.entidades
         public string? Modalidad { get; set; }
         public string? Ciudad { get; set; }
         public string? Direccion { get; set; }
+        public string? Imagen { get; set; }
 
         public List<Empresas_Academias_Eventos> EmpresasAcademiasEventos { get; set; } = new List<Empresas_Academias_Eventos>();
         public List<Eventos_Organizadores> EventosOrganizadores { get; set; } = new List<Eventos_Organizadores>();

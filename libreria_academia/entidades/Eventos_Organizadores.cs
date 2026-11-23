@@ -7,5 +7,6 @@ namespace libreria_academia.entidades
         public Eventos? _eventos { get; set; }
         public int? Organizador { get; set; }
         public Organizadores? _organizadores { get; set; }
+        public string? Imagen { get; set; }
     }
 }

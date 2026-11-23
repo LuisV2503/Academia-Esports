@@ -11,6 +11,7 @@ namespace libreria_academia.entidades
         public string? Nacionalidad { get; set; }
         public int? Sueldo { get; set; }
         public Sueldos? _sueldo { get; set; }
+        public string? Imagen { get; set; }
 
         public List<Jugadores> Jugadores { get; set; } = new List<Jugadores>();
         public List<Entrenadores> Entrenadores { get; set; } = new List<Entrenadores>();

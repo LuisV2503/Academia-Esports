@@ -8,5 +8,6 @@ namespace libreria_academia.entidades
         public int? Duracion { get; set; }
         public int? Evento { get; set; }
         public Eventos? _eventos { get; set; }
+        public string? Imagen { get; set; }
     }
 }

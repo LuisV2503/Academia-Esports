@@ -10,5 +10,6 @@ namespace libreria_academia.entidades
         public Personas? _persona { get; set; }
         public int? Equipo { get; set; }
         public Equipos? _equipo { get; set; }
+        public string? Imagen { get; set; }
     }
 }

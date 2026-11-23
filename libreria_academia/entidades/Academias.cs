@@ -9,6 +9,7 @@ namespace libreria_academia.entidades
         public string? Nombre { get; set; }
         public string? Correo { get; set; }
         public string? Descripcion { get; set; }
+        public string? Imagen { get; set; }
         public DateTime? FechaCrea { get; set; }
         public bool? Nacional { get; set; }
 
