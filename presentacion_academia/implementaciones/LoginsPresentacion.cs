@@ -76,9 +76,6 @@ namespace aplicacion_academia.interfaces
             if (Validar(entidad, true))
                 throw new Exception("Falta informacion");
 
-            if (string.IsNullOrEmpty(entidad.Imagen))
-                throw new Exception("Imagen requerida");
-
             if (!this.IUsuariosPresentacion.Consultar().Any(x => x.Id == entidad.Usuario))
                 throw new Exception("Usuario invalido");
 

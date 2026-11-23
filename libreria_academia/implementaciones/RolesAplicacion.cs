@@ -67,15 +67,19 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad.Nombre ?? "";
 
-            return this.conexion.Roles!
+            var lista = this.conexion.Roles!
                 .Where(x => x.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Roles> Consultar()
         {
-            return this.conexion.Roles!
+            var lista = this.conexion.Roles!
                 .ToList();
+
+            return lista;
         }
 
         public Roles Insertar(Roles entidad)
@@ -100,8 +104,7 @@ namespace libreria_academia.implementaciones
         {
             return
                 string.IsNullOrEmpty(entidad.Nombre) ||
-                string.IsNullOrEmpty(entidad.Descripcion) ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                string.IsNullOrEmpty(entidad.Descripcion);
         }
     }
 }

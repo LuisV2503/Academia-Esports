@@ -67,15 +67,19 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad.Nombre ?? "";
 
-            return this.conexion.Juegos!
+            var lista = this.conexion.Juegos!
                 .Where(x => x.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Juegos> Consultar()
         {
-            return this.conexion.Juegos!
+            var lista = this.conexion.Juegos!
                 .ToList();
+
+            return lista;
         }
 
         public Juegos Insertar(Juegos entidad)
@@ -101,8 +105,7 @@ namespace libreria_academia.implementaciones
             return
                 string.IsNullOrEmpty(entidad.Nombre) ||
                 string.IsNullOrEmpty(entidad.Genero) ||
-                entidad.CantJug == null || entidad.CantJug == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                entidad.CantJug == null || entidad.CantJug == 0;
         }
     }
 }

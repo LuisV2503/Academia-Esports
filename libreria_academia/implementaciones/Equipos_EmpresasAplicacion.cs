@@ -72,19 +72,23 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad._equipos?.Nombre ?? "";
 
-            return this.conexion.Equipos_Empresas!
+            var lista = this.conexion.Equipos_Empresas!
                 .Include(x => x._equipos)
                 .Include(x => x._empresas)
                 .Where(x => x._equipos!.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Equipos_Empresas> Consultar()
         {
-            return this.conexion.Equipos_Empresas!
+            var lista = this.conexion.Equipos_Empresas!
                 .Include(x => x._equipos)
                 .Include(x => x._empresas)
                 .ToList();
+
+            return lista;
         }
 
         public Equipos_Empresas Insertar(Equipos_Empresas entidad)
@@ -117,8 +121,7 @@ namespace libreria_academia.implementaciones
         {
             return
                 entidad.Equipo == null || entidad.Equipo == 0 ||
-                entidad.Empresa == null || entidad.Empresa == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                entidad.Empresa == null || entidad.Empresa == 0;
         }
     }
 }

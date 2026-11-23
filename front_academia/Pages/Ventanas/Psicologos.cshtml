@@ -69,21 +69,6 @@
                        asp-for="@Model.Actual!.Activo" />
                 <br />
 
-                <label>
-                    Imagen (máx. 500 KB)
-                </label>
-                @if (!string.IsNullOrEmpty(Model.Actual!.Imagen))
-                {
-                    <br />
-                    <img src="data:image/png;base64,@Model.Actual!.Imagen" style="max-height:120px;max-width:200px;" />
-                }
-                <br />
-                <input id="flImagen"
-                       type="file"
-                       accept="image/*"
-                       asp-for="FormFile" />
-                <br />
-
             </div>
         }
 

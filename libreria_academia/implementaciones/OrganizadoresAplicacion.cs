@@ -21,15 +21,6 @@ namespace libreria_academia.implementaciones
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
 
-            // Si no se elige una imagen nueva, se conserva la que ya tiene
-            if (string.IsNullOrEmpty(entidad.Imagen))
-            {
-                entidad.Imagen = this.conexion.Organizadores!
-                    .Where(x => x.Id == entidad.Id)
-                    .Select(x => x.Imagen)
-                    .FirstOrDefault();
-            }
-
             if (Validar(entidad))
                 throw new Exception("Faltan valores");
 
@@ -70,17 +61,29 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad._persona?.Nombre ?? "";
 
-            return this.conexion.Organizadores!
+            var lista = this.conexion.Organizadores!
                 .Include(x => x._persona)
                 .Where(x => x._persona!.Nombre!.Contains(nombre))
                 .ToList();
+
+            // La foto del rol es la de su persona
+            foreach (var elemento in lista)
+                elemento.Imagen = elemento._persona?.Imagen;
+
+            return lista;
         }
 
         public List<Organizadores> Consultar()
         {
-            return this.conexion.Organizadores!
+            var lista = this.conexion.Organizadores!
                 .Include(x => x._persona)
                 .ToList();
+
+            // La foto del rol es la de su persona
+            foreach (var elemento in lista)
+                elemento.Imagen = elemento._persona?.Imagen;
+
+            return lista;
         }
 
         public Organizadores Insertar(Organizadores entidad)
@@ -107,8 +110,7 @@ namespace libreria_academia.implementaciones
         private bool Validar(Organizadores entidad)
         {
             return
-                entidad.Persona == null || entidad.Persona == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                entidad.Persona == null || entidad.Persona == 0;
         }
     }
 }

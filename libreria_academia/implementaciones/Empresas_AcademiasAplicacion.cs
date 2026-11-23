@@ -72,19 +72,23 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad._empresas?.Nombre ?? "";
 
-            return this.conexion.Empresas_Academias!
+            var lista = this.conexion.Empresas_Academias!
                 .Include(x => x._empresas)
                 .Include(x => x._academias)
                 .Where(x => x._empresas!.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Empresas_Academias> Consultar()
         {
-            return this.conexion.Empresas_Academias!
+            var lista = this.conexion.Empresas_Academias!
                 .Include(x => x._empresas)
                 .Include(x => x._academias)
                 .ToList();
+
+            return lista;
         }
 
         public Empresas_Academias Insertar(Empresas_Academias entidad)
@@ -117,8 +121,7 @@ namespace libreria_academia.implementaciones
         {
             return
                 entidad.Empresa == null || entidad.Empresa == 0 ||
-                entidad.Academia == null || entidad.Academia == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                entidad.Academia == null || entidad.Academia == 0;
         }
     }
 }

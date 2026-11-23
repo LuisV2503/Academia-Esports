@@ -64,17 +64,21 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad.Nombre ?? "";
 
-            return this.conexion.Entretenimientos!
+            var lista = this.conexion.Entretenimientos!
                 .Include(x => x._eventos)
                 .Where(x => x.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Entretenimientos> Consultar()
         {
-            return this.conexion.Entretenimientos!
+            var lista = this.conexion.Entretenimientos!
                 .Include(x => x._eventos)
                 .ToList();
+
+            return lista;
         }
 
         public Entretenimientos Insertar(Entretenimientos entidad)
@@ -101,8 +105,7 @@ namespace libreria_academia.implementaciones
                 string.IsNullOrEmpty(entidad.Nombre) ||
                 string.IsNullOrEmpty(entidad.Descripcion) ||
                 entidad.Duracion == null || entidad.Duracion == 0 ||
-                entidad.Evento == null || entidad.Evento == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                entidad.Evento == null || entidad.Evento == 0;
         }
     }
 }

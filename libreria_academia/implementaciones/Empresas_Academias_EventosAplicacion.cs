@@ -76,21 +76,25 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad._eventos?.Nombre ?? "";
 
-            return this.conexion.Empresas_Academias_Eventos!
+            var lista = this.conexion.Empresas_Academias_Eventos!
                 .Include(x => x._empresas)
                 .Include(x => x._academias)
                 .Include(x => x._eventos)
                 .Where(x => x._eventos!.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Empresas_Academias_Eventos> Consultar()
         {
-            return this.conexion.Empresas_Academias_Eventos!
+            var lista = this.conexion.Empresas_Academias_Eventos!
                 .Include(x => x._empresas)
                 .Include(x => x._academias)
                 .Include(x => x._eventos)
                 .ToList();
+
+            return lista;
         }
 
         public Empresas_Academias_Eventos Insertar(Empresas_Academias_Eventos entidad)
@@ -128,8 +132,7 @@ namespace libreria_academia.implementaciones
             return
                 entidad.Empresa == null || entidad.Empresa == 0 ||
                 entidad.Academia == null || entidad.Academia == 0 ||
-                entidad.Evento == null || entidad.Evento == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                entidad.Evento == null || entidad.Evento == 0;
         }
     }
 }

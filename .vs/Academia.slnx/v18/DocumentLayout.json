@@ -133,10 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|c:\\users\\administrator\\desktop\\academia\\front_academia\\pages\\ventanas\\logins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{475F9B8D-4EB0-4822-B045-F02614237DE8}|front_academia\\front_academia.csproj|solutionrelative:front_academia\\pages\\ventanas\\logins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|c:\\users\\administrator\\desktop\\academia\\libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{72B3E7D7-4161-49B6-90D1-66912B12B742}|libreria_academia\\libreria_academia.csproj|solutionrelative:libreria_academia\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -151,7 +147,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "presentacion_academia",
+              "Title": "presentacion_academia.csproj",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\presentacion_academia.csproj",
               "RelativeDocumentMoniker": "presentacion_academia\\presentacion_academia.csproj",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\presentacion_academia\\presentacion_academia.csproj",
@@ -164,7 +160,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "front_academia",
+              "Title": "front_academia.csproj",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\front_academia.csproj",
               "RelativeDocumentMoniker": "front_academia\\front_academia.csproj",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\front_academia\\front_academia.csproj",
@@ -184,8 +180,7 @@
               "RelativeToolTip": "presentacion_academia\\implementaciones\\Comunicaciones.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T20:43:31.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T20:43:31.183Z"
             },
             {
               "$type": "Document",
@@ -197,8 +192,7 @@
               "RelativeToolTip": "libreria_academia\\implementaciones\\AuditoriasAplicacion.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAUwBIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T20:32:57.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T20:32:57.317Z"
             },
             {
               "$type": "Document",
@@ -210,8 +204,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Tipo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:57:09.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:57:09.142Z"
             },
             {
               "$type": "Document",
@@ -223,8 +216,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Sueldos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:57:04.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:57:04.208Z"
             },
             {
               "$type": "Document",
@@ -236,8 +228,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Roles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:56:32.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:56:32.721Z"
             },
             {
               "$type": "Document",
@@ -249,8 +240,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Psicologos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:56:28.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:56:28.524Z"
             },
             {
               "$type": "Document",
@@ -262,8 +252,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Personas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:56:24.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:56:24.644Z"
             },
             {
               "$type": "Document",
@@ -275,8 +264,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Organizadores.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:56:20.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:56:20.829Z"
             },
             {
               "$type": "Document",
@@ -288,8 +276,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Logins.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:57.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:57.297Z"
             },
             {
               "$type": "Document",
@@ -301,8 +288,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Usuarios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T23:03:51.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-22T23:03:51.958Z"
             },
             {
               "$type": "Document",
@@ -314,8 +300,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Jugadores.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:50.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:50.1Z"
             },
             {
               "$type": "Document",
@@ -327,8 +312,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Juegos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:45.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:45.704Z"
             },
             {
               "$type": "Document",
@@ -340,8 +324,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Fisioterapeutas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:41.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:41.49Z"
             },
             {
               "$type": "Document",
@@ -353,8 +336,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Eventos_Organizadores.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:37.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:37.466Z"
             },
             {
               "$type": "Document",
@@ -366,8 +348,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Eventos.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA1wBAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:32.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:32.115Z"
             },
             {
               "$type": "Document",
@@ -379,8 +360,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Equipos_Juegos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:28.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:28.466Z"
             },
             {
               "$type": "Document",
@@ -392,8 +372,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Equipos_Empresas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:24.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:24.393Z"
             },
             {
               "$type": "Document",
@@ -405,8 +384,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Equipos_Academias.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:19.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:19.752Z"
             },
             {
               "$type": "Document",
@@ -418,8 +396,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Equipos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:15.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:15.78Z"
             },
             {
               "$type": "Document",
@@ -431,8 +408,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Entretenimientos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:12.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:12.446Z"
             },
             {
               "$type": "Document",
@@ -444,8 +420,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Entrenadores.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:07.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:07.656Z"
             },
             {
               "$type": "Document",
@@ -457,8 +432,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Empresas_Academias_Eventos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:55:03.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:55:03.451Z"
             },
             {
               "$type": "Document",
@@ -470,8 +444,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Empresas_Academias.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:54:45.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:54:45.805Z"
             },
             {
               "$type": "Document",
@@ -483,8 +456,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Empresas.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAowA8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:54:39.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:54:39.88Z"
             },
             {
               "$type": "Document",
@@ -496,8 +468,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Auditorias.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:54:09.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:54:09.614Z"
             },
             {
               "$type": "Document",
@@ -509,8 +480,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Analistas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:54:04.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:54:04.322Z"
             },
             {
               "$type": "Document",
@@ -522,8 +492,7 @@
               "RelativeToolTip": "libreria_academia\\entidades\\Academias.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:53:48.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:53:48.664Z"
             },
             {
               "$type": "Document",
@@ -535,8 +504,7 @@
               "RelativeToolTip": "servicios_academia\\Servicios\\UsuarioActual.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T18:49:13.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T18:49:13.63Z"
             },
             {
               "$type": "Document",
@@ -548,20 +516,18 @@
               "RelativeToolTip": "front_academia\\Filtros\\FiltroSesion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T15:11:02.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T15:11:02.953Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "query.sql ",
+              "Title": "query.sql",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\query.sql",
               "RelativeDocumentMoniker": "libreria_academia\\query.sql",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Academia\\libreria_academia\\query.sql",
               "RelativeToolTip": "libreria_academia\\query.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-11-23T00:21:17.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T00:21:17.762Z"
             },
             {
               "$type": "Document",
@@ -573,8 +539,7 @@
               "RelativeToolTip": "front_academia\\Pages\\Ventanas\\Logins.cshtml.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAswA0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-22T23:01:51.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-22T23:01:51.58Z"
             }
           ]
         }

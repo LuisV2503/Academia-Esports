@@ -93,8 +93,7 @@ namespace libreria_academia.implementaciones
         private bool Validar(Sueldos entidad)
         {
             return
-                entidad.Valor == null || entidad.Valor == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                entidad.Valor == null || entidad.Valor == 0;
         }
     }
 }

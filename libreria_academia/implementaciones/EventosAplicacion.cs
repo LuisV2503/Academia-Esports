@@ -72,15 +72,19 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad.Nombre ?? "";
 
-            return this.conexion.Eventos!
+            var lista = this.conexion.Eventos!
                 .Where(x => x.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Eventos> Consultar()
         {
-            return this.conexion.Eventos!
+            var lista = this.conexion.Eventos!
                 .ToList();
+
+            return lista;
         }
 
         public Eventos Insertar(Eventos entidad)
@@ -113,8 +117,7 @@ namespace libreria_academia.implementaciones
                 entidad.FechaFin == null ||
                 string.IsNullOrEmpty(entidad.Modalidad) ||
                 string.IsNullOrEmpty(entidad.Ciudad) ||
-                string.IsNullOrEmpty(entidad.Direccion) ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                string.IsNullOrEmpty(entidad.Direccion);
         }
     }
 }

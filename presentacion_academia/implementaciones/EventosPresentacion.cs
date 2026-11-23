@@ -72,9 +72,6 @@ namespace aplicacion_academia.interfaces
             if (Validar(entidad))
                 throw new Exception("Falta informacion");
 
-            if (string.IsNullOrEmpty(entidad.Imagen))
-                throw new Exception("Imagen requerida");
-
             if (entidad.FechaFin < entidad.FechaIni)
                 throw new Exception("Fechas invalidas");
 

@@ -64,15 +64,19 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad.Nombre ?? "";
 
-            return this.conexion.Tipo!
+            var lista = this.conexion.Tipo!
                 .Where(x => x.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Tipo> Consultar()
         {
-            return this.conexion.Tipo!
+            var lista = this.conexion.Tipo!
                 .ToList();
+
+            return lista;
         }
 
         public Tipo Insertar(Tipo entidad)
@@ -94,8 +98,7 @@ namespace libreria_academia.implementaciones
         {
             return
                 string.IsNullOrEmpty(entidad.Nombre) ||
-                string.IsNullOrEmpty(entidad.Descripccion) ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                string.IsNullOrEmpty(entidad.Descripccion);
         }
     }
 }

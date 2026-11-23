@@ -31,8 +31,7 @@ namespace libreria_academia.implementaciones
                     .FirstOrDefault();
             }
 
-            if (entidad.Usuario == null || entidad.Usuario == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen))
+            if (entidad.Usuario == null || entidad.Usuario == 0)
                 throw new Exception("Faltan valores");
 
             if (!this.conexion.Usuarios!.Any(x => x.Id == entidad.Usuario))
@@ -115,8 +114,7 @@ namespace libreria_academia.implementaciones
                 throw new Exception("Ya se guardo");
 
             if (entidad.Usuario == null || entidad.Usuario == 0 ||
-                string.IsNullOrEmpty(entidad.Contrasena) ||
-                string.IsNullOrEmpty(entidad.Imagen))
+                string.IsNullOrEmpty(entidad.Contrasena))
                 throw new Exception("Faltan valores");
 
             if (!this.conexion.Usuarios!.Any(x => x.Id == entidad.Usuario))

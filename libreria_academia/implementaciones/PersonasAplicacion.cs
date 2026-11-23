@@ -75,17 +75,21 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad.Nombre ?? "";
 
-            return this.conexion.Personas!
+            var lista = this.conexion.Personas!
                 .Include(x => x._sueldo)
                 .Where(x => x.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Personas> Consultar()
         {
-            return this.conexion.Personas!
+            var lista = this.conexion.Personas!
                 .Include(x => x._sueldo)
                 .ToList();
+
+            return lista;
         }
 
         public Personas Insertar(Personas entidad)

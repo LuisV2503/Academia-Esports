@@ -28,7 +28,6 @@ namespace front_academia.Pages.Ventanas
         [BindProperty] public Organizadores? Actual { get; set; }
         [BindProperty] public bool Formulario { get; set; } = false;
         [BindProperty] public bool Borrar { get; set; } = false;
-        [BindProperty] public IFormFile? FormFile { get; set; }
         public List<SelectListItem> ListaPersona { get; set; } = new List<SelectListItem>();
 
         public void OnGet() { OnPostBtBuscar(); }
@@ -65,8 +64,6 @@ namespace front_academia.Pages.Ventanas
         {
             try
             {
-                LeerImagen();
-
                 if (this.Actual!.Id == null || this.Actual!.Id == 0)
                     this.Actual = this.IOrganizadoresPresentacion.Insertar(this.Actual!);
                 else
@@ -130,20 +127,6 @@ namespace front_academia.Pages.Ventanas
             {
                 OnPostBtBuscar();
             }
-        }
-
-        // Convierte la imagen elegida a base64 (se guarda como texto en la base de datos)
-        private void LeerImagen()
-        {
-            if (FormFile == null || FormFile.Length == 0)
-                return;
-
-            if (FormFile.Length > LimiteImagenKb * 1024)
-                throw new Exception($"La imagen no puede superar {LimiteImagenKb} KB");
-
-            using var memoryStream = new MemoryStream();
-            FormFile.CopyTo(memoryStream);
-            this.Actual!.Imagen = Convert.ToBase64String(memoryStream.ToArray());
         }
 
         private void CargarListas()

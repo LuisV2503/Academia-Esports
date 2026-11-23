@@ -21,15 +21,6 @@ namespace libreria_academia.implementaciones
             if (entidad.Id == null || entidad.Id == 0)
                 throw new Exception("No se guardo");
 
-            // Si no se elige una imagen nueva, se conserva la que ya tiene
-            if (string.IsNullOrEmpty(entidad.Imagen))
-            {
-                entidad.Imagen = this.conexion.Jugadores!
-                    .Where(x => x.Id == entidad.Id)
-                    .Select(x => x.Imagen)
-                    .FirstOrDefault();
-            }
-
             if (Validar(entidad))
                 throw new Exception("Faltan valores");
 
@@ -70,19 +61,31 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad._persona?.Nombre ?? "";
 
-            return this.conexion.Jugadores!
+            var lista = this.conexion.Jugadores!
                 .Include(x => x._persona)
                 .Include(x => x._equipo)
                 .Where(x => x._persona!.Nombre!.Contains(nombre))
                 .ToList();
+
+            // La foto del rol es la de su persona
+            foreach (var elemento in lista)
+                elemento.Imagen = elemento._persona?.Imagen;
+
+            return lista;
         }
 
         public List<Jugadores> Consultar()
         {
-            return this.conexion.Jugadores!
+            var lista = this.conexion.Jugadores!
                 .Include(x => x._persona)
                 .Include(x => x._equipo)
                 .ToList();
+
+            // La foto del rol es la de su persona
+            foreach (var elemento in lista)
+                elemento.Imagen = elemento._persona?.Imagen;
+
+            return lista;
         }
 
         public Jugadores Insertar(Jugadores entidad)
@@ -113,8 +116,7 @@ namespace libreria_academia.implementaciones
         {
             return
                 entidad.Persona == null || entidad.Persona == 0 ||
-                entidad.Equipo == null || entidad.Equipo == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                entidad.Equipo == null || entidad.Equipo == 0;
         }
     }
 }

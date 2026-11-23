@@ -74,17 +74,21 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad.Nombre ?? "";
 
-            return this.conexion.Usuarios!
+            var lista = this.conexion.Usuarios!
                 .Include(x => x._rol)
                 .Where(x => x.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Usuarios> Consultar()
         {
-            return this.conexion.Usuarios!
+            var lista = this.conexion.Usuarios!
                 .Include(x => x._rol)
                 .ToList();
+
+            return lista;
         }
 
         public Usuarios Insertar(Usuarios entidad)
@@ -116,8 +120,7 @@ namespace libreria_academia.implementaciones
             return
                 string.IsNullOrEmpty(entidad.Nombre) ||
                 string.IsNullOrEmpty(entidad.Correo) ||
-                entidad.Rol == null || entidad.Rol == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                entidad.Rol == null || entidad.Rol == 0;
         }
     }
 }

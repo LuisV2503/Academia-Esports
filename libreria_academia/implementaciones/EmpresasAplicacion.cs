@@ -72,17 +72,21 @@ namespace libreria_academia.implementaciones
         {
             var nombre = entidad.Nombre ?? "";
 
-            return this.conexion.Empresas!
+            var lista = this.conexion.Empresas!
                 .Include(x => x._tipo)
                 .Where(x => x.Nombre!.Contains(nombre))
                 .ToList();
+
+            return lista;
         }
 
         public List<Empresas> Consultar()
         {
-            return this.conexion.Empresas!
+            var lista = this.conexion.Empresas!
                 .Include(x => x._tipo)
                 .ToList();
+
+            return lista;
         }
 
         public Empresas Insertar(Empresas entidad)
@@ -113,8 +117,7 @@ namespace libreria_academia.implementaciones
                 string.IsNullOrEmpty(entidad.Pais) ||
                 string.IsNullOrEmpty(entidad.Descripcion) ||
                 string.IsNullOrEmpty(entidad.Correo) ||
-                entidad.Tipo == null || entidad.Tipo == 0 ||
-                string.IsNullOrEmpty(entidad.Imagen);
+                entidad.Tipo == null || entidad.Tipo == 0;
         }
     }
 }
